@@ -1,0 +1,1 @@
+grant delete on public.child_access_grants to authenticated;

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T12:00:00+07:00",
+  "title": "Sistem Desain: Bag2School",
+  "extensions": {
+    "colorMeta": {
+      "orange-utama": {"role": "primary", "displayName": "Oranye Teman Sekolah", "tonalRamp": ["#4C1D00", "#7A3000", "#A34400", "#CC5800", "#F06C08", "#FF8E42", "#FFB783", "#FFE3CE"]},
+      "oranye-lembut": {"role": "primary", "displayName": "Oranye Lembut", "tonalRamp": ["#4C1D00", "#7A3000", "#A34400", "#CC5800", "#F06C08", "#FF8E42", "#FFB783", "#FFE3CE"]},
+      "persik-pucat": {"role": "neutral", "displayName": "Persik Pucat", "tonalRamp": ["#4C1D00", "#7A3000", "#A34400", "#CC5800", "#F06C08", "#FF8E42", "#FFB783", "#FFE3CE"]},
+      "krem-latar": {"role": "neutral", "displayName": "Krem Pagi", "tonalRamp": ["#302722", "#52463F", "#75645A", "#99877C", "#BDAEA5", "#D7CDC6", "#EDE7E2", "#FFFCF8"]},
+      "tinta-hangat": {"role": "neutral", "displayName": "Tinta Hangat", "tonalRamp": ["#302722", "#52463F", "#75645A", "#99877C", "#BDAEA5", "#D7CDC6", "#EDE7E2", "#FFFCF8"]},
+      "teks-redup": {"role": "neutral", "displayName": "Abu Hangat", "tonalRamp": ["#302722", "#52463F", "#75645A", "#99877C", "#BDAEA5", "#D7CDC6", "#EDE7E2", "#FFFCF8"]},
+      "ungu-tugas": {"role": "secondary", "displayName": "Ungu Pekerjaan Rumah", "tonalRamp": ["#211643", "#382672", "#4F37A2", "#6650C5", "#806DDF", "#A092EA", "#C4BAF4", "#E8E4FC"]},
+      "ungu-lembut": {"role": "secondary", "displayName": "Ungu Lembut", "tonalRamp": ["#211643", "#382672", "#4F37A2", "#6650C5", "#806DDF", "#A092EA", "#C4BAF4", "#E8E4FC"]},
+      "teal-aktivitas": {"role": "tertiary", "displayName": "Teal Aktivitas", "tonalRamp": ["#00382F", "#00594C", "#087969", "#219887", "#42B5A3", "#73CCBD", "#A8DED5", "#D8F2ED"]},
+      "hijau-selesai": {"role": "tertiary", "displayName": "Hijau Siap", "tonalRamp": ["#17321D", "#2E542F", "#477641", "#609552", "#7BB56A", "#9BC98F", "#BFDCB6", "#E3F1DD"]}
+    },
+    "typographyMeta": {
+      "headline": {"displayName": "Judul Layar", "purpose": "Judul layar dan bagian utama."},
+      "title": {"displayName": "Judul Item", "purpose": "Nama aktivitas dan item daftar."},
+      "body": {"displayName": "Isi", "purpose": "Keterangan dan isi yang mudah dipindai."},
+      "label": {"displayName": "Label", "purpose": "Metadata, navigasi, dan status singkat."}
+    },
+    "shadows": [
+      {"name": "ambient-card", "value": "0 5px 14px rgba(0,0,0,0.04)", "purpose": "Pemisahan lembut pada kartu jadwal putih."},
+      {"name": "material-fab", "value": "Elevasi Material 3, 4dp", "purpose": "Menegaskan satu tindakan utama mengambang."}
+    ],
+    "motion": [
+      {"name": "tactile-control", "value": "120ms; InkRipple", "purpose": "Respons tekan dan hover pada kontrol Material."}
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Tombol Utama",
+      "kind": "button",
+      "refersTo": "tombol-utama",
+      "description": "Filled action oranye bergaya Material 3.",
+      "html": "<button class=\"ds-btn-primary\">Simpan</button>",
+      "css": ".ds-btn-primary { background: #FF7A21; color: #fff; padding: 14px 20px; border: 0; border-radius: 16px; font: 700 14px Roboto, sans-serif; transition: filter 120ms ease, transform 120ms ease; } .ds-btn-primary:hover { filter: brightness(.96); } .ds-btn-primary:focus-visible { outline: 3px solid #FFC18F; outline-offset: 2px; } .ds-btn-primary:active { filter: brightness(.91); }"
+    },
+    {
+      "name": "Kolom Isian",
+      "kind": "input",
+      "refersTo": "bidang-input",
+      "description": "Bidang putih dengan garis tepi hangat dan sudut membulat.",
+      "html": "<label class=\"ds-field\"><span>Nama aktivitas</span><input placeholder=\"Contoh: Membawa buku\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; color: #756B65; font: 600 12px Roboto, sans-serif; } .ds-field input { background: #fff; color: #302722; border: 1px solid #FFC18F; border-radius: 16px; padding: 14px 16px; font: 400 14px Roboto, sans-serif; } .ds-field input:focus-visible { outline: 2px solid #FF7A21; outline-offset: 1px; }"
+    },
+    {
+      "name": "Kartu Jadwal",
+      "kind": "card",
+      "refersTo": "kartu-jadwal",
+      "description": "Kartu putih dengan bayangan ambient halus.",
+      "html": "<article class=\"ds-card\"><strong>Les musik</strong><span>15.00–16.00</span></article>",
+      "css": ".ds-card { display: grid; gap: 5px; padding: 18px 16px 14px; background: #fff; color: #302722; border-radius: 28px; box-shadow: 0 5px 14px rgba(0,0,0,.04); font-family: Roboto, sans-serif; } .ds-card strong { font-size: 15px; font-weight: 800; } .ds-card span { color: #756B65; font-size: 12px; font-weight: 600; }"
+    },
+    {
+      "name": "Navigasi Bawah",
+      "kind": "nav",
+      "refersTo": "navigasi-bawah",
+      "description": "Lima tujuan utama dengan indikator aktif pastel.",
+      "html": "<nav class=\"ds-nav\"><a>⌂<small>Beranda</small></a><a class=\"is-active\">▦<small>Jadwal</small></a><a>☑<small>Siap</small></a></nav>",
+      "css": ".ds-nav { display: flex; justify-content: space-around; gap: 8px; padding: 8px; background: #FFF1E8; border-radius: 16px; font: 500 20px Roboto, sans-serif; } .ds-nav a { display: grid; justify-items: center; gap: 3px; min-width: 56px; color: #756B65; text-decoration: none; } .ds-nav small { font-size: 10px; } .ds-nav .is-active { color: #302722; } .ds-nav .is-active::before { content: ''; position: absolute; z-index: -1; width: 54px; height: 30px; margin-top: -3px; border-radius: 18px; background: #FFE8D5; } .ds-nav a:focus-visible { outline: 2px solid #FF7A21; outline-offset: 2px; border-radius: 8px; }"
+    },
+    {
+      "name": "Chip Hari",
+      "kind": "chip",
+      "refersTo": "chip-hari",
+      "description": "Chip pilihan ringkas dengan aksen oranye lembut.",
+      "html": "<button class=\"ds-chip\">Senin</button>",
+      "css": ".ds-chip { background: #FFE8D5; color: #302722; border: 0; border-radius: 16px; padding: 8px 12px; font: 700 12px Roboto, sans-serif; transition: background 120ms ease; } .ds-chip:hover { background: #FFD9BC; } .ds-chip:focus-visible { outline: 2px solid #FF7A21; outline-offset: 2px; } .ds-chip:active { background: #FFC18F; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Pendamping Hangat Hari Sekolah",
+    "overview": "Bag2School terasa seperti pendamping keluarga yang ramah saat orang tua memeriksa jadwal, persiapan, dan pekerjaan rumah anak. Kanvas krem, permukaan putih yang terangkat lembut, serta aksen oranye membentuk suasana hangat tanpa mengurangi kejelasan informasi. Bagi hadir sebagai teman yang suportif di dalam alur kerja, bukan sebagai hiasan yang mengalihkan perhatian.\n\nAntarmuka memakai pola Material 3 Android dengan bentuk membulat, tombol responsif, dan navigasi bawah yang akrab. Teks Roboto yang tebal membantu orang tua memindai agenda dan status dengan cepat. Ungu dan teal memberi pembeda ringan untuk jenis aktivitas, sementara oranye tetap menjadi aksen utama.",
+    "keyCharacteristics": ["Hangat dan menenangkan melalui latar krem serta permukaan putih.", "Ramah dan taktil lewat kontrol Material 3 dan sudut membulat.", "Mudah dipindai dengan judul tegas dan aksen warna kontekstual.", "Berpusat pada anak dan keluarga; Bagi menyampaikan dukungan dengan singkat."],
+    "rules": [
+      {"name": "Aturan Aksen Kontekstual", "body": "Oranye memimpin tindakan; ungu dan teal dipakai untuk membantu membedakan jenis tugas, bukan sebagai warna aksi umum.", "section": "colors"},
+      {"name": "Aturan Skala Teks", "body": "Gunakan gaya teks Material dan ukuran relatif terhadap skala sistem; ukuran di atas merangkum pola yang terlihat, bukan larangan terhadap penskalaan aksesibilitas.", "section": "typography"},
+      {"name": "Aturan Kartu Terangkat Lembut", "body": "Kartu putih boleh sedikit terangkat dari latar; gunakan tonal layering terlebih dahulu dan bayangan halus hanya jika perlu memisahkan bidang.", "section": "elevation"}
+    ],
+    "dos": ["Do gunakan oranye untuk aksi utama dan aksen interaksi.", "Do gunakan ungu dan teal untuk membedakan konteks pekerjaan rumah serta aktivitas.", "Do pertahankan kartu putih, latar krem, teks tinta hangat, dan sudut membulat.", "Do gunakan komponen Material 3 Android dan jaga target sentuh minimal 48 × 48 dp.", "Do biarkan teks mengikuti pengaturan ukuran font sistem.", "Do gunakan Bagi untuk dukungan yang singkat, ramah, dan relevan dengan alur."],
+    "donts": ["Don't menjadikan ungu atau teal sebagai pengganti aksen oranye untuk semua tindakan utama.", "Don't menambahkan bayangan berat pada kartu yang sudah terbaca lewat perbedaan warna bidang.", "Don't mengandalkan warna saja untuk menjelaskan status; sertakan label atau ikon yang jelas.", "Don't mengganti pola Material Android dengan kontrol bergaya platform lain."]
+  }
+}

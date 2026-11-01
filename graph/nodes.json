@@ -1,0 +1,7929 @@
+{
+ "files": [
+  {
+   "path": "lib/auth_gate.dart",
+   "lines": 310,
+   "kb": 8,
+   "classes": [
+    {
+     "name": "AuthGate",
+     "file": "lib/auth_gate.dart",
+     "startLine": 10,
+     "endLine": 17,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [
+      "AuthGate"
+     ],
+     "methodLines": [
+      {
+       "name": "AuthGate",
+       "line": 13
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_AuthGateState",
+     "file": "lib/auth_gate.dart",
+     "startLine": 19,
+     "endLine": 309,
+     "lines": 291,
+     "widgetOf": "AuthGate",
+     "methods": [
+      "_showFamilyJoinedDialog",
+      "initState",
+      "_checkCurrentUser",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_showFamilyJoinedDialog",
+       "line": 26
+      },
+      {
+       "name": "initState",
+       "line": 61
+      },
+      {
+       "name": "_checkCurrentUser",
+       "line": 66
+      },
+      {
+       "name": "build",
+       "line": 236
+      }
+     ],
+     "storeRefs": 8,
+     "dialogs": 3,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "choose_family_page.dart",
+    "login_page.dart",
+    "data/store.dart",
+    "family_waiting_room_page.dart",
+    "services/bagi_family_service.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/bagi_identity_settings_page.dart",
+   "lines": 255,
+   "kb": 7,
+   "classes": [
+    {
+     "name": "BagiIdentitySettingsPage",
+     "file": "lib/bagi_identity_settings_page.dart",
+     "startLine": 5,
+     "endLine": 11,
+     "lines": 7,
+     "widgetOf": null,
+     "methods": [
+      "BagiIdentitySettingsPage"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiIdentitySettingsPage",
+       "line": 6
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_BagiIdentitySettingsPageState",
+     "file": "lib/bagi_identity_settings_page.dart",
+     "startLine": 13,
+     "endLine": 254,
+     "lines": 242,
+     "widgetOf": "BagiIdentitySettingsPage",
+     "methods": [
+      "initState",
+      "dispose",
+      "_genderLabel",
+      "_save",
+      "_showMessage",
+      "_buildGenderOption",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 30
+      },
+      {
+       "name": "dispose",
+       "line": 41
+      },
+      {
+       "name": "_genderLabel",
+       "line": 46
+      },
+      {
+       "name": "_save",
+       "line": 59
+      },
+      {
+       "name": "_showMessage",
+       "line": 102
+      },
+      {
+       "name": "_buildGenderOption",
+       "line": 114
+      },
+      {
+       "name": "build",
+       "line": 157
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "services/bagi_identity_controller.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/child_permission_service.dart",
+   "lines": 74,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "ChildPermission",
+     "file": "lib/child_permission_service.dart",
+     "startLine": 3,
+     "endLine": 38,
+     "lines": 36,
+     "widgetOf": null,
+     "methods": [
+      "ChildPermission"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildPermission",
+       "line": 13
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ChildPermissionService",
+     "file": "lib/child_permission_service.dart",
+     "startLine": 40,
+     "endLine": 73,
+     "lines": 34,
+     "widgetOf": null,
+     "methods": [
+      "getPermission"
+     ],
+     "methodLines": [
+      {
+       "name": "getPermission",
+       "line": 47
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "child_access_grants"
+     ],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [
+    "child_access_grants"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/choose_family_page.dart",
+   "lines": 232,
+   "kb": 7,
+   "classes": [
+    {
+     "name": "ChooseFamilyPage",
+     "file": "lib/choose_family_page.dart",
+     "startLine": 7,
+     "endLine": 146,
+     "lines": 140,
+     "widgetOf": null,
+     "methods": [
+      "ChooseFamilyPage",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "ChooseFamilyPage",
+       "line": 11
+      },
+      {
+       "name": "build",
+       "line": 23
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ChoiceCard",
+     "file": "lib/choose_family_page.dart",
+     "startLine": 148,
+     "endLine": 231,
+     "lines": 84,
+     "widgetOf": null,
+     "methods": [
+      "_ChoiceCard",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_ChoiceCard",
+       "line": 154
+      },
+      {
+       "name": "build",
+       "line": 166
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "family_waiting_room_page.dart",
+    "create_family_page.dart",
+    "login_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/config/supabase_config.dart",
+   "lines": 73,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "SupabaseConfig",
+     "file": "lib/config/supabase_config.dart",
+     "startLine": 37,
+     "endLine": 72,
+     "lines": 36,
+     "widgetOf": null,
+     "methods": [],
+     "methodLines": [],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/create_family_page.dart",
+   "lines": 367,
+   "kb": 13,
+   "classes": [
+    {
+     "name": "CreateFamilyPage",
+     "file": "lib/create_family_page.dart",
+     "startLine": 10,
+     "endLine": 22,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "CreateFamilyPage"
+     ],
+     "methodLines": [
+      {
+       "name": "CreateFamilyPage",
+       "line": 14
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_CreateFamilyPageState",
+     "file": "lib/create_family_page.dart",
+     "startLine": 24,
+     "endLine": 366,
+     "lines": 343,
+     "widgetOf": "CreateFamilyPage",
+     "methods": [
+      "initState",
+      "_loadProfileName",
+      "dispose",
+      "_createFamily",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 37
+      },
+      {
+       "name": "_loadProfileName",
+       "line": 42
+      },
+      {
+       "name": "dispose",
+       "line": 53
+      },
+      {
+       "name": "_createFamily",
+       "line": 58
+      },
+      {
+       "name": "build",
+       "line": 149
+      }
+     ],
+     "storeRefs": 3,
+     "dialogs": 2,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "data/store.dart",
+    "login_page.dart",
+    "services/bagi_family_service.dart",
+    "services/bagi_profile_service.dart",
+    "services/owner_tutorial_state.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/data/serializers.dart",
+   "lines": 174,
+   "kb": 6,
+   "classes": [],
+   "imports": [
+    "../models/activity_models.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/data/store.dart",
+   "lines": 1986,
+   "kb": 65,
+   "classes": [
+    {
+     "name": "LocalAuthorization",
+     "file": "lib/data/store.dart",
+     "startLine": 22,
+     "endLine": 316,
+     "lines": 295,
+     "widgetOf": null,
+     "methods": [
+      "_isOwner",
+      "canView",
+      "canEdit",
+      "canEditActive",
+      "requestViewAccess",
+      "featureLabel",
+      "showDenied",
+      "restrictedView",
+      "authorizedView"
+     ],
+     "methodLines": [
+      {
+       "name": "_isOwner",
+       "line": 32
+      },
+      {
+       "name": "canView",
+       "line": 34
+      },
+      {
+       "name": "canEdit",
+       "line": 54
+      },
+      {
+       "name": "canEditActive",
+       "line": 74
+      },
+      {
+       "name": "requestViewAccess",
+       "line": 77
+      },
+      {
+       "name": "featureLabel",
+       "line": 127
+      },
+      {
+       "name": "showDenied",
+       "line": 140
+      },
+      {
+       "name": "restrictedView",
+       "line": 216
+      },
+      {
+       "name": "authorizedView",
+       "line": 299
+      }
+     ],
+     "storeRefs": 15,
+     "dialogs": 1,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ChildDataBundle",
+     "file": "lib/data/store.dart",
+     "startLine": 319,
+     "endLine": 412,
+     "lines": 94,
+     "widgetOf": null,
+     "methods": [
+      "_ChildDataBundle",
+      "toJson"
+     ],
+     "methodLines": [
+      {
+       "name": "_ChildDataBundle",
+       "line": 330
+      },
+      {
+       "name": "toJson",
+       "line": 342
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolStore",
+     "file": "lib/data/store.dart",
+     "startLine": 414,
+     "endLine": 1985,
+     "lines": 1572,
+     "widgetOf": null,
+     "methods": [
+      "loadSupabaseFamily",
+      "restoreSupabaseSession",
+      "signInLocal",
+      "signOutLocal",
+      "updateCurrentAccount",
+      "createLocalAccountForFamilyMember",
+      "canViewChild",
+      "restoreLocalFamilyActivity",
+      "_persistLocalFamilyActivity",
+      "_persistLocalFamilyNotifications",
+      "pruneNotificationInbox",
+      "markCurrentNotificationsRead",
+      "memberCanViewFeature",
+      "recordFamilyActivity",
+      "recordFamilyManagementActivity",
+      "notificationsForCurrentMember",
+      "responseNotificationsForCurrentMember",
+      "familyAccessGrantKey",
+      "saveAccessGrant",
+      "removeAccessGrant",
+      "Function",
+      "cacheFamilySnapshot",
+      "restoreFamilySnapshot",
+      "restoreAccessGrants",
+      "_persistAccessGrants",
+      "applyPendingAccessToNewMembers",
+      "updateActiveChild",
+      "deleteActiveChild",
+      "deleteChild",
+      "accessForChild",
+      "updateChildAccess",
+      "_saveActiveChildData",
+      "dayDataForChild",
+      "restoreActiveChildSchoolData",
+      "persistActiveChildSchoolData",
+      "persistSchoolDataSoon",
+      "_scheduleSchoolDataWrite",
+      "flushSchoolDataWrites",
+      "_clearActiveChildData",
+      "_loadChildData",
+      "switchActiveChild",
+      "cancelActivityOccurrence",
+      "isOccurrenceCancelled",
+      "moveCancelledOccurrences",
+      "activityOccurrenceKey",
+      "isActivityOccurrenceCancelled",
+      "preparationOccurrenceKey",
+      "hasPreparationOccurrenceOverride",
+      "preparationsForOccurrence"
+     ],
+     "methodLines": [
+      {
+       "name": "loadSupabaseFamily",
+       "line": 427
+      },
+      {
+       "name": "restoreSupabaseSession",
+       "line": 673
+      },
+      {
+       "name": "signInLocal",
+       "line": 686
+      },
+      {
+       "name": "signOutLocal",
+       "line": 711
+      },
+      {
+       "name": "updateCurrentAccount",
+       "line": 716
+      },
+      {
+       "name": "createLocalAccountForFamilyMember",
+       "line": 736
+      },
+      {
+       "name": "canViewChild",
+       "line": 789
+      },
+      {
+       "name": "restoreLocalFamilyActivity",
+       "line": 872
+      },
+      {
+       "name": "_persistLocalFamilyActivity",
+       "line": 943
+      },
+      {
+       "name": "_persistLocalFamilyNotifications",
+       "line": 974
+      },
+      {
+       "name": "pruneNotificationInbox",
+       "line": 1006
+      },
+      {
+       "name": "markCurrentNotificationsRead",
+       "line": 1066
+      },
+      {
+       "name": "memberCanViewFeature",
+       "line": 1090
+      },
+      {
+       "name": "recordFamilyActivity",
+       "line": 1116
+      },
+      {
+       "name": "recordFamilyManagementActivity",
+       "line": 1198
+      },
+      {
+       "name": "notificationsForCurrentMember",
+       "line": 1215
+      },
+      {
+       "name": "responseNotificationsForCurrentMember",
+       "line": 1225
+      },
+      {
+       "name": "familyAccessGrantKey",
+       "line": 1238
+      },
+      {
+       "name": "saveAccessGrant",
+       "line": 1245
+      },
+      {
+       "name": "removeAccessGrant",
+       "line": 1251
+      },
+      {
+       "name": "Function",
+       "line": 1260
+      },
+      {
+       "name": "cacheFamilySnapshot",
+       "line": 1277
+      },
+      {
+       "name": "restoreFamilySnapshot",
+       "line": 1317
+      },
+      {
+       "name": "restoreAccessGrants",
+       "line": 1404
+      },
+      {
+       "name": "_persistAccessGrants",
+       "line": 1441
+      },
+      {
+       "name": "applyPendingAccessToNewMembers",
+       "line": 1468
+      },
+      {
+       "name": "updateActiveChild",
+       "line": 1559
+      },
+      {
+       "name": "deleteActiveChild",
+       "line": 1572
+      },
+      {
+       "name": "deleteChild",
+       "line": 1576
+      },
+      {
+       "name": "accessForChild",
+       "line": 1607
+      },
+      {
+       "name": "updateChildAccess",
+       "line": 1612
+      },
+      {
+       "name": "_saveActiveChildData",
+       "line": 1616
+      },
+      {
+       "name": "dayDataForChild",
+       "line": 1653
+      },
+      {
+       "name": "restoreActiveChildSchoolData",
+       "line": 1720
+      },
+      {
+       "name": "persistActiveChildSchoolData",
+       "line": 1745
+      },
+      {
+       "name": "persistSchoolDataSoon",
+       "line": 1751
+      },
+      {
+       "name": "_scheduleSchoolDataWrite",
+       "line": 1758
+      },
+      {
+       "name": "flushSchoolDataWrites",
+       "line": 1779
+      },
+      {
+       "name": "_clearActiveChildData",
+       "line": 1781
+      },
+      {
+       "name": "_loadChildData",
+       "line": 1793
+      },
+      {
+       "name": "switchActiveChild",
+       "line": 1818
+      },
+      {
+       "name": "cancelActivityOccurrence",
+       "line": 1854
+      },
+      {
+       "name": "isOccurrenceCancelled",
+       "line": 1863
+      },
+      {
+       "name": "moveCancelledOccurrences",
+       "line": 1872
+      },
+      {
+       "name": "activityOccurrenceKey",
+       "line": 1901
+      },
+      {
+       "name": "isActivityOccurrenceCancelled",
+       "line": 1906
+      },
+      {
+       "name": "preparationOccurrenceKey",
+       "line": 1925
+      },
+      {
+       "name": "hasPreparationOccurrenceOverride",
+       "line": 1930
+      },
+      {
+       "name": "preparationsForOccurrence",
+       "line": 1939
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "children"
+     ],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../models/activity_models.dart",
+    "../models/child_profile.dart",
+    "../models/family_models.dart",
+    "../services/bagi_family_service.dart",
+    "../services/bagi_local_auth_service.dart",
+    "../services/family_access_defaults.dart",
+    "../widgets/app_notification.dart",
+    "serializers.dart"
+   ],
+   "usesPrefs": true,
+   "tables": [
+    "children"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/family_request_pending_page.dart",
+   "lines": 198,
+   "kb": 7,
+   "classes": [
+    {
+     "name": "FamilyRequestPendingPage",
+     "file": "lib/family_request_pending_page.dart",
+     "startLine": 3,
+     "endLine": 197,
+     "lines": 195,
+     "widgetOf": null,
+     "methods": [
+      "FamilyRequestPendingPage",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilyRequestPendingPage",
+       "line": 6
+      },
+      {
+       "name": "build",
+       "line": 14
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/family_waiting_room_page.dart",
+   "lines": 570,
+   "kb": 19,
+   "classes": [
+    {
+     "name": "FamilyWaitingRoomPage",
+     "file": "lib/family_waiting_room_page.dart",
+     "startLine": 7,
+     "endLine": 14,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [
+      "FamilyWaitingRoomPage"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilyWaitingRoomPage",
+       "line": 10
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_FamilyWaitingRoomPageState",
+     "file": "lib/family_waiting_room_page.dart",
+     "startLine": 16,
+     "endLine": 277,
+     "lines": 262,
+     "widgetOf": "FamilyWaitingRoomPage",
+     "methods": [
+      "initState",
+      "_loadPendingRequest",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 26
+      },
+      {
+       "name": "_loadPendingRequest",
+       "line": 31
+      },
+      {
+       "name": "build",
+       "line": 49
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_WaitingCard",
+     "file": "lib/family_waiting_room_page.dart",
+     "startLine": 481,
+     "endLine": 569,
+     "lines": 89,
+     "widgetOf": null,
+     "methods": [
+      "_WaitingCard",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_WaitingCard",
+       "line": 488
+      },
+      {
+       "name": "build",
+       "line": 501
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "services/bagi_family_service.dart",
+    "login_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/family/family_activity_page.dart",
+   "lines": 282,
+   "kb": 10,
+   "classes": [
+    {
+     "name": "FamilyActivityPage",
+     "file": "lib/features/family/family_activity_page.dart",
+     "startLine": 9,
+     "endLine": 14,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "FamilyActivityPage"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilyActivityPage",
+       "line": 10
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_FamilyActivityPageState",
+     "file": "lib/features/family/family_activity_page.dart",
+     "startLine": 16,
+     "endLine": 281,
+     "lines": 266,
+     "widgetOf": "FamilyActivityPage",
+     "methods": [
+      "_actorName",
+      "_featureLabel",
+      "_dayHeader",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_actorName",
+       "line": 24
+      },
+      {
+       "name": "_featureLabel",
+       "line": 33
+      },
+      {
+       "name": "_dayHeader",
+       "line": 37
+      },
+      {
+       "name": "build",
+       "line": 81
+      }
+     ],
+     "storeRefs": 5,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/family_models.dart",
+    "../../models/child_profile.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/family/family_settings_page.dart",
+   "lines": 2559,
+   "kb": 89,
+   "classes": [
+    {
+     "name": "FamilySettingsPage",
+     "file": "lib/features/family/family_settings_page.dart",
+     "startLine": 19,
+     "endLine": 31,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "FamilySettingsPage"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilySettingsPage",
+       "line": 23
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_FamilySettingsPageState",
+     "file": "lib/features/family/family_settings_page.dart",
+     "startLine": 33,
+     "endLine": 2558,
+     "lines": 2526,
+     "widgetOf": "FamilySettingsPage",
+     "methods": [
+      "initState",
+      "_runFamilyPageTutorial",
+      "_roleLabel",
+      "_accessLabel",
+      "_showMemberEditor",
+      "_showAddFamilyMemberMethodDialog",
+      "_showBagiChatDialog",
+      "_accessSummary",
+      "_showInvitationCodeDialog",
+      "_showInvitationLinkDialog",
+      "_grantAccess",
+      "_editChildAccess",
+      "_memberCard",
+      "_childAccessCard",
+      "_showFamilyFeedback",
+      "_renameCurrentFamily",
+      "_leaveCurrentFamily",
+      "_showFamilySwitcher",
+      "_showJoinFamilyDialog",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 43
+      },
+      {
+       "name": "_runFamilyPageTutorial",
+       "line": 52
+      },
+      {
+       "name": "_roleLabel",
+       "line": 94
+      },
+      {
+       "name": "_accessLabel",
+       "line": 107
+      },
+      {
+       "name": "_showMemberEditor",
+       "line": 118
+      },
+      {
+       "name": "_showAddFamilyMemberMethodDialog",
+       "line": 615
+      },
+      {
+       "name": "_showBagiChatDialog",
+       "line": 699
+      },
+      {
+       "name": "_accessSummary",
+       "line": 850
+      },
+      {
+       "name": "_showInvitationCodeDialog",
+       "line": 870
+      },
+      {
+       "name": "_showInvitationLinkDialog",
+       "line": 1119
+      },
+      {
+       "name": "_grantAccess",
+       "line": 1232
+      },
+      {
+       "name": "_editChildAccess",
+       "line": 1517
+      },
+      {
+       "name": "_memberCard",
+       "line": 1636
+      },
+      {
+       "name": "_childAccessCard",
+       "line": 1668
+      },
+      {
+       "name": "_showFamilyFeedback",
+       "line": 1818
+      },
+      {
+       "name": "_renameCurrentFamily",
+       "line": 1835
+      },
+      {
+       "name": "_leaveCurrentFamily",
+       "line": 1903
+      },
+      {
+       "name": "_showFamilySwitcher",
+       "line": 2013
+      },
+      {
+       "name": "_showJoinFamilyDialog",
+       "line": 2113
+      },
+      {
+       "name": "build",
+       "line": 2283
+      }
+     ],
+     "storeRefs": 55,
+     "dialogs": 25,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/child_profile.dart",
+    "../../models/family_models.dart",
+    "../../services/bagi_family_service.dart",
+    "../../services/family_access_defaults.dart",
+    "../../create_family_page.dart",
+    "../../widgets/app_notification.dart",
+    "../../widgets/bagi_character.dart",
+    "../../widgets/bagi_tutorial_overlay.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/home/home_page.dart",
+   "lines": 2981,
+   "kb": 108,
+   "classes": [
+    {
+     "name": "HomePage",
+     "file": "lib/features/home/home_page.dart",
+     "startLine": 29,
+     "endLine": 34,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "HomePage"
+     ],
+     "methodLines": [
+      {
+       "name": "HomePage",
+       "line": 30
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_HomePageState",
+     "file": "lib/features/home/home_page.dart",
+     "startLine": 36,
+     "endLine": 2957,
+     "lines": 2922,
+     "widgetOf": "HomePage",
+     "methods": [
+      "_bagiHomeMessagesForHour",
+      "initState",
+      "dispose",
+      "_maybeStartOwnerTutorial",
+      "_waitForHomeRoute",
+      "_runHomeMenuTutorial",
+      "_pushTutorialPage",
+      "_startBagiHomeConversation",
+      "_nextBagiHomeMessage",
+      "_dayOnly",
+      "_activitiesForDate",
+      "_preparationsForDate",
+      "_isHomeworkPreparationHome",
+      "_isPreparationChecked",
+      "_isHomeHomeworkChecked",
+      "_readinessProgress",
+      "_toggleHomePreparation",
+      "_toggleHomeHomework",
+      "_formatDateLong",
+      "_formatTime",
+      "_activityColor",
+      "_activityBackground",
+      "_activityIcon",
+      "_chooseActiveChild",
+      "_pickChildPhoto",
+      "_editChildProfile",
+      "_buildChildAvatar",
+      "_buildOfflineBanner",
+      "_buildOtherChildCards",
+      "_buildOtherChildCard",
+      "_showChildTomorrow",
+      "_daySectionLabel",
+      "_readOnlyActivityRow",
+      "_readOnlySimpleRow",
+      "_buildHomeBagiCompanion",
+      "_buildTomorrowSection",
+      "_homeScheduleItem",
+      "_buildReadinessRing",
+      "_buildReadinessStatus",
+      "_buildReadinessRow",
+      "_buildPreparationSummary",
+      "_homeworksForHome",
+      "_homeworksForDate",
+      "_buildHomeworkSummary",
+      "_openNotificationTarget",
+      "_openAccessResponseTarget",
+      "_showNotifications",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_bagiHomeMessagesForHour",
+       "line": 59
+      },
+      {
+       "name": "initState",
+       "line": 115
+      },
+      {
+       "name": "dispose",
+       "line": 125
+      },
+      {
+       "name": "_maybeStartOwnerTutorial",
+       "line": 130
+      },
+      {
+       "name": "_waitForHomeRoute",
+       "line": 198
+      },
+      {
+       "name": "_runHomeMenuTutorial",
+       "line": 207
+      },
+      {
+       "name": "_pushTutorialPage",
+       "line": 335
+      },
+      {
+       "name": "_startBagiHomeConversation",
+       "line": 355
+      },
+      {
+       "name": "_nextBagiHomeMessage",
+       "line": 363
+      },
+      {
+       "name": "_dayOnly",
+       "line": 383
+      },
+      {
+       "name": "_activitiesForDate",
+       "line": 385
+      },
+      {
+       "name": "_preparationsForDate",
+       "line": 399
+      },
+      {
+       "name": "_isHomeworkPreparationHome",
+       "line": 440
+      },
+      {
+       "name": "_isPreparationChecked",
+       "line": 443
+      },
+      {
+       "name": "_isHomeHomeworkChecked",
+       "line": 475
+      },
+      {
+       "name": "_readinessProgress",
+       "line": 483
+      },
+      {
+       "name": "_toggleHomePreparation",
+       "line": 499
+      },
+      {
+       "name": "_toggleHomeHomework",
+       "line": 550
+      },
+      {
+       "name": "_formatDateLong",
+       "line": 561
+      },
+      {
+       "name": "_formatTime",
+       "line": 588
+      },
+      {
+       "name": "_activityColor",
+       "line": 592
+      },
+      {
+       "name": "_activityBackground",
+       "line": 607
+      },
+      {
+       "name": "_activityIcon",
+       "line": 622
+      },
+      {
+       "name": "_chooseActiveChild",
+       "line": 671
+      },
+      {
+       "name": "_pickChildPhoto",
+       "line": 730
+      },
+      {
+       "name": "_editChildProfile",
+       "line": 741
+      },
+      {
+       "name": "_buildChildAvatar",
+       "line": 913
+      },
+      {
+       "name": "_buildOfflineBanner",
+       "line": 926
+      },
+      {
+       "name": "_buildOtherChildCards",
+       "line": 956
+      },
+      {
+       "name": "_buildOtherChildCard",
+       "line": 999
+      },
+      {
+       "name": "_showChildTomorrow",
+       "line": 1044
+      },
+      {
+       "name": "_daySectionLabel",
+       "line": 1187
+      },
+      {
+       "name": "_readOnlyActivityRow",
+       "line": 1202
+      },
+      {
+       "name": "_readOnlySimpleRow",
+       "line": 1250
+      },
+      {
+       "name": "_buildHomeBagiCompanion",
+       "line": 1298
+      },
+      {
+       "name": "_buildTomorrowSection",
+       "line": 1366
+      },
+      {
+       "name": "_homeScheduleItem",
+       "line": 1418
+      },
+      {
+       "name": "_buildReadinessRing",
+       "line": 1477
+      },
+      {
+       "name": "_buildReadinessStatus",
+       "line": 1527
+      },
+      {
+       "name": "_buildReadinessRow",
+       "line": 1566
+      },
+      {
+       "name": "_buildPreparationSummary",
+       "line": 1696
+      },
+      {
+       "name": "_homeworksForHome",
+       "line": 1908
+      },
+      {
+       "name": "_homeworksForDate",
+       "line": 1921
+      },
+      {
+       "name": "_buildHomeworkSummary",
+       "line": 1933
+      },
+      {
+       "name": "_openNotificationTarget",
+       "line": 2061
+      },
+      {
+       "name": "_openAccessResponseTarget",
+       "line": 2096
+      },
+      {
+       "name": "_showNotifications",
+       "line": 2126
+      },
+      {
+       "name": "build",
+       "line": 2644
+      }
+     ],
+     "storeRefs": 64,
+     "dialogs": 7,
+     "permissions": 0,
+     "navigations": [
+      "FamilyActivityPage",
+      "HomeworkPage",
+      "PreparationPage",
+      "SchedulePage",
+      "SettingsPage"
+     ],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolLogo",
+     "file": "lib/features/home/home_page.dart",
+     "startLine": 2959,
+     "endLine": 2980,
+     "lines": 22,
+     "widgetOf": null,
+     "methods": [
+      "Bag2SchoolLogo",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "Bag2SchoolLogo",
+       "line": 2960
+      },
+      {
+       "name": "build",
+       "line": 2963
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/activity_models.dart",
+    "../../models/child_profile.dart",
+    "../../models/family_models.dart",
+    "../../services/bagi_greeting_service.dart",
+    "../../services/bagi_message.dart",
+    "../../services/owner_tutorial_state.dart",
+    "../../theme/bag2school_tokens.dart",
+    "../../utils/controllers.dart",
+    "../../widgets/app_notification.dart",
+    "../../widgets/bagi_character.dart",
+    "../../widgets/bagi_tutorial_overlay.dart",
+    "../../widgets/bubble_tail_painters.dart",
+    "../../widgets/child_avatar.dart",
+    "../family/family_activity_page.dart",
+    "../homework/homework_page.dart",
+    "../preparation/preparation_page.dart",
+    "../schedule/schedule_page.dart",
+    "../settings/settings_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/homework/homework_history_page.dart",
+   "lines": 114,
+   "kb": 4,
+   "classes": [
+    {
+     "name": "HomeworkHistoryPage",
+     "file": "lib/features/homework/homework_history_page.dart",
+     "startLine": 7,
+     "endLine": 113,
+     "lines": 107,
+     "widgetOf": null,
+     "methods": [
+      "HomeworkHistoryPage",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "HomeworkHistoryPage",
+       "line": 8
+      },
+      {
+       "name": "build",
+       "line": 11
+      }
+     ],
+     "storeRefs": 1,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/homework/homework_page.dart",
+   "lines": 2203,
+   "kb": 87,
+   "classes": [
+    {
+     "name": "HomeworkPage",
+     "file": "lib/features/homework/homework_page.dart",
+     "startLine": 22,
+     "endLine": 34,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "HomeworkPage"
+     ],
+     "methodLines": [
+      {
+       "name": "HomeworkPage",
+       "line": 26
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_HomeworkPageState",
+     "file": "lib/features/homework/homework_page.dart",
+     "startLine": 36,
+     "endLine": 2188,
+     "lines": 2153,
+     "widgetOf": "HomeworkPage",
+     "methods": [
+      "initState",
+      "_runHomeworkTutorial",
+      "dispose",
+      "_typeMessage",
+      "_dayOnly",
+      "_dateLabel",
+      "_dueLabel",
+      "_sameDay",
+      "_homeworkStatusLabel",
+      "_openHomework",
+      "_todayHomework",
+      "_tomorrowHomework",
+      "_upcomingHomework",
+      "_overdueHomework",
+      "_completedItems",
+      "_toggleDone",
+      "_undoCompleted",
+      "_removeHomeworkFromPreparation",
+      "_addHomeworkToPreparation",
+      "_delete",
+      "_bagiHero",
+      "_speechBubble",
+      "_segmentedTabs",
+      "_tabButton",
+      "_emptyState",
+      "_homeworkSection",
+      "_homeworkEmptyHint",
+      "_homeworkCard",
+      "_completedInfo",
+      "_smallInfo",
+      "_formField",
+      "_selector",
+      "_relatedActivityLabel",
+      "_addHomework",
+      "_editHomework",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 61
+      },
+      {
+       "name": "_runHomeworkTutorial",
+       "line": 79
+      },
+      {
+       "name": "dispose",
+       "line": 93
+      },
+      {
+       "name": "_typeMessage",
+       "line": 99
+      },
+      {
+       "name": "_dayOnly",
+       "line": 113
+      },
+      {
+       "name": "_dateLabel",
+       "line": 115
+      },
+      {
+       "name": "_dueLabel",
+       "line": 133
+      },
+      {
+       "name": "_sameDay",
+       "line": 142
+      },
+      {
+       "name": "_homeworkStatusLabel",
+       "line": 145
+      },
+      {
+       "name": "_openHomework",
+       "line": 155
+      },
+      {
+       "name": "_todayHomework",
+       "line": 163
+      },
+      {
+       "name": "_tomorrowHomework",
+       "line": 170
+      },
+      {
+       "name": "_upcomingHomework",
+       "line": 177
+      },
+      {
+       "name": "_overdueHomework",
+       "line": 186
+      },
+      {
+       "name": "_completedItems",
+       "line": 194
+      },
+      {
+       "name": "_toggleDone",
+       "line": 199
+      },
+      {
+       "name": "_undoCompleted",
+       "line": 219
+      },
+      {
+       "name": "_removeHomeworkFromPreparation",
+       "line": 228
+      },
+      {
+       "name": "_addHomeworkToPreparation",
+       "line": 239
+      },
+      {
+       "name": "_delete",
+       "line": 266
+      },
+      {
+       "name": "_bagiHero",
+       "line": 313
+      },
+      {
+       "name": "_speechBubble",
+       "line": 337
+      },
+      {
+       "name": "_segmentedTabs",
+       "line": 380
+      },
+      {
+       "name": "_tabButton",
+       "line": 409
+      },
+      {
+       "name": "_emptyState",
+       "line": 440
+      },
+      {
+       "name": "_homeworkSection",
+       "line": 506
+      },
+      {
+       "name": "_homeworkEmptyHint",
+       "line": 604
+      },
+      {
+       "name": "_homeworkCard",
+       "line": 632
+      },
+      {
+       "name": "_completedInfo",
+       "line": 894
+      },
+      {
+       "name": "_smallInfo",
+       "line": 924
+      },
+      {
+       "name": "_formField",
+       "line": 949
+      },
+      {
+       "name": "_selector",
+       "line": 1007
+      },
+      {
+       "name": "_relatedActivityLabel",
+       "line": 1049
+      },
+      {
+       "name": "_addHomework",
+       "line": 1062
+      },
+      {
+       "name": "_editHomework",
+       "line": 1575
+      },
+      {
+       "name": "build",
+       "line": 2014
+      }
+     ],
+     "storeRefs": 41,
+     "dialogs": 3,
+     "permissions": 11,
+     "navigations": [
+      "HomeworkHistoryPage",
+      "PreparationPage",
+      "SchedulePage",
+      "SettingsPage"
+     ],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_HomeworkActivityOption",
+     "file": "lib/features/homework/homework_page.dart",
+     "startLine": 2190,
+     "endLine": 2202,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "_HomeworkActivityOption"
+     ],
+     "methodLines": [
+      {
+       "name": "_HomeworkActivityOption",
+       "line": 2193
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/activity_models.dart",
+    "../../models/family_models.dart",
+    "../../utils/controllers.dart",
+    "../../utils/focus.dart",
+    "../../widgets/bagi_character.dart",
+    "../../widgets/bagi_tutorial_overlay.dart",
+    "../../widgets/bubble_tail_painters.dart",
+    "../preparation/preparation_page.dart",
+    "../schedule/schedule_page.dart",
+    "../settings/settings_page.dart",
+    "homework_history_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/preparation/preparation_page.dart",
+   "lines": 2691,
+   "kb": 97,
+   "classes": [
+    {
+     "name": "PreparationPage",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 24,
+     "endLine": 42,
+     "lines": 19,
+     "widgetOf": null,
+     "methods": [
+      "PreparationPage"
+     ],
+     "methodLines": [
+      {
+       "name": "PreparationPage",
+       "line": 32
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_PreparationPageState",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 44,
+     "endLine": 1959,
+     "lines": 1916,
+     "widgetOf": "PreparationPage",
+     "methods": [
+      "_currentBagiGreeting",
+      "_dayOnly",
+      "_formatDate",
+      "_formatTime",
+      "_preparationGroupTitle",
+      "_personalizeBagi",
+      "_categoryLabel",
+      "_activityIcon",
+      "_activityTint",
+      "_itemsForDate",
+      "_preparationDates",
+      "_done",
+      "_progress",
+      "_progressText",
+      "_groupsForTodayAndFuture",
+      "_historyGroups",
+      "_bagiThoughts",
+      "_startBagi",
+      "_showNextBagi",
+      "initState",
+      "_runPreparationTutorial",
+      "dispose",
+      "_occurrenceKey",
+      "_isOccurrenceChecked",
+      "_editPreparationGroup",
+      "_deletePreparationItem",
+      "_deleteHomeworkFromPreparation",
+      "_deletePreparationGroup",
+      "_toggleItem",
+      "_showHistory",
+      "_isHomeworkPreparation",
+      "_hasEditablePreparations",
+      "_buildPreparationCard",
+      "_preparationActionButton",
+      "_sectionLabel",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_currentBagiGreeting",
+       "line": 54
+      },
+      {
+       "name": "_dayOnly",
+       "line": 61
+      },
+      {
+       "name": "_formatDate",
+       "line": 64
+      },
+      {
+       "name": "_formatTime",
+       "line": 82
+      },
+      {
+       "name": "_preparationGroupTitle",
+       "line": 112
+      },
+      {
+       "name": "_personalizeBagi",
+       "line": 116
+      },
+      {
+       "name": "_categoryLabel",
+       "line": 120
+      },
+      {
+       "name": "_activityIcon",
+       "line": 136
+      },
+      {
+       "name": "_activityTint",
+       "line": 152
+      },
+      {
+       "name": "_itemsForDate",
+       "line": 168
+      },
+      {
+       "name": "_preparationDates",
+       "line": 175
+      },
+      {
+       "name": "_done",
+       "line": 184
+      },
+      {
+       "name": "_progress",
+       "line": 187
+      },
+      {
+       "name": "_progressText",
+       "line": 192
+      },
+      {
+       "name": "_groupsForTodayAndFuture",
+       "line": 196
+      },
+      {
+       "name": "_historyGroups",
+       "line": 278
+      },
+      {
+       "name": "_bagiThoughts",
+       "line": 312
+      },
+      {
+       "name": "_startBagi",
+       "line": 387
+      },
+      {
+       "name": "_showNextBagi",
+       "line": 396
+      },
+      {
+       "name": "initState",
+       "line": 431
+      },
+      {
+       "name": "_runPreparationTutorial",
+       "line": 441
+      },
+      {
+       "name": "dispose",
+       "line": 458
+      },
+      {
+       "name": "_occurrenceKey",
+       "line": 463
+      },
+      {
+       "name": "_isOccurrenceChecked",
+       "line": 467
+      },
+      {
+       "name": "_editPreparationGroup",
+       "line": 496
+      },
+      {
+       "name": "_deletePreparationItem",
+       "line": 762
+      },
+      {
+       "name": "_deleteHomeworkFromPreparation",
+       "line": 836
+      },
+      {
+       "name": "_deletePreparationGroup",
+       "line": 893
+      },
+      {
+       "name": "_toggleItem",
+       "line": 951
+      },
+      {
+       "name": "_showHistory",
+       "line": 1049
+      },
+      {
+       "name": "_isHomeworkPreparation",
+       "line": 1147
+      },
+      {
+       "name": "_hasEditablePreparations",
+       "line": 1150
+      },
+      {
+       "name": "_buildPreparationCard",
+       "line": 1153
+      },
+      {
+       "name": "_preparationActionButton",
+       "line": 1412
+      },
+      {
+       "name": "_sectionLabel",
+       "line": 1435
+      },
+      {
+       "name": "build",
+       "line": 1461
+      }
+     ],
+     "storeRefs": 70,
+     "dialogs": 5,
+     "permissions": 9,
+     "navigations": [
+      "HomeworkPage",
+      "SchedulePage",
+      "SettingsPage"
+     ],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_PreparationGroup",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 1961,
+     "endLine": 1973,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [],
+     "methodLines": [],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "PreparationOfferCard",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 1975,
+     "endLine": 1997,
+     "lines": 23,
+     "widgetOf": null,
+     "methods": [
+      "PreparationOfferCard"
+     ],
+     "methodLines": [
+      {
+       "name": "PreparationOfferCard",
+       "line": 1988
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "PreparationOfferCardState",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 1999,
+     "endLine": 2502,
+     "lines": 504,
+     "widgetOf": "PreparationOfferCard",
+     "methods": [
+      "_loadDefaults",
+      "_removeDefault",
+      "initState",
+      "dispose",
+      "_formatTime",
+      "_formatShortDate",
+      "_formatDate",
+      "_addCustomItem",
+      "_toggleItem",
+      "_pickReminderDate",
+      "_pickReminderTime",
+      "build",
+      "_messageFor"
+     ],
+     "methodLines": [
+      {
+       "name": "_loadDefaults",
+       "line": 2012
+      },
+      {
+       "name": "_removeDefault",
+       "line": 2022
+      },
+      {
+       "name": "initState",
+       "line": 2034
+      },
+      {
+       "name": "dispose",
+       "line": 2046
+      },
+      {
+       "name": "_formatTime",
+       "line": 2053
+      },
+      {
+       "name": "_formatShortDate",
+       "line": 2061
+      },
+      {
+       "name": "_formatDate",
+       "line": 2079
+      },
+      {
+       "name": "_addCustomItem",
+       "line": 2107
+      },
+      {
+       "name": "_toggleItem",
+       "line": 2126
+      },
+      {
+       "name": "_pickReminderDate",
+       "line": 2138
+      },
+      {
+       "name": "_pickReminderTime",
+       "line": 2170
+      },
+      {
+       "name": "build",
+       "line": 2194
+      },
+      {
+       "name": "_messageFor",
+       "line": 2473
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "PreparationChecklistItem",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 2504,
+     "endLine": 2523,
+     "lines": 20,
+     "widgetOf": null,
+     "methods": [
+      "PreparationChecklistItem"
+     ],
+     "methodLines": [
+      {
+       "name": "PreparationChecklistItem",
+       "line": 2511
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_PreparationChecklistItemState",
+     "file": "lib/features/preparation/preparation_page.dart",
+     "startLine": 2525,
+     "endLine": 2690,
+     "lines": 166,
+     "widgetOf": "PreparationChecklistItem",
+     "methods": [
+      "_itemIcon",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_itemIcon",
+       "line": 2528
+      },
+      {
+       "name": "build",
+       "line": 2552
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/activity_models.dart",
+    "../../models/family_models.dart",
+    "../../services/bagi_greeting_service.dart",
+    "../../services/bagi_message.dart",
+    "../../services/preparation_defaults.dart",
+    "../../utils/controllers.dart",
+    "../../utils/focus.dart",
+    "../../widgets/bagi_character.dart",
+    "../../widgets/bagi_tutorial_overlay.dart",
+    "../../widgets/bubble_tail_painters.dart",
+    "../homework/homework_page.dart",
+    "../schedule/schedule_page.dart",
+    "../settings/settings_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/forms/event_activity_form.dart",
+   "lines": 297,
+   "kb": 9,
+   "classes": [
+    {
+     "name": "EventActivityForm",
+     "file": "lib/features/schedule/forms/event_activity_form.dart",
+     "startLine": 8,
+     "endLine": 20,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "EventActivityForm"
+     ],
+     "methodLines": [
+      {
+       "name": "EventActivityForm",
+       "line": 12
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_EventActivityFormState",
+     "file": "lib/features/schedule/forms/event_activity_form.dart",
+     "startLine": 22,
+     "endLine": 296,
+     "lines": 275,
+     "widgetOf": "EventActivityForm",
+     "methods": [
+      "initState",
+      "dispose",
+      "_formatDate",
+      "_formatTime",
+      "_pickDate",
+      "_pickTime",
+      "_save",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 30
+      },
+      {
+       "name": "dispose",
+       "line": 40
+      },
+      {
+       "name": "_formatDate",
+       "line": 45
+      },
+      {
+       "name": "_formatTime",
+       "line": 63
+      },
+      {
+       "name": "_pickDate",
+       "line": 74
+      },
+      {
+       "name": "_pickTime",
+       "line": 86
+      },
+      {
+       "name": "_save",
+       "line": 109
+      },
+      {
+       "name": "build",
+       "line": 157
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../models/activity_models.dart",
+    "../../../utils/focus.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/forms/exam_activity_form.dart",
+   "lines": 311,
+   "kb": 9,
+   "classes": [
+    {
+     "name": "ExamActivityForm",
+     "file": "lib/features/schedule/forms/exam_activity_form.dart",
+     "startLine": 8,
+     "endLine": 20,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "ExamActivityForm"
+     ],
+     "methodLines": [
+      {
+       "name": "ExamActivityForm",
+       "line": 12
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ExamActivityFormState",
+     "file": "lib/features/schedule/forms/exam_activity_form.dart",
+     "startLine": 22,
+     "endLine": 310,
+     "lines": 289,
+     "widgetOf": "ExamActivityForm",
+     "methods": [
+      "initState",
+      "dispose",
+      "_formatDate",
+      "_formatTime",
+      "_pickDate",
+      "_pickTime",
+      "_save",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 31
+      },
+      {
+       "name": "dispose",
+       "line": 41
+      },
+      {
+       "name": "_formatDate",
+       "line": 46
+      },
+      {
+       "name": "_formatTime",
+       "line": 64
+      },
+      {
+       "name": "_pickDate",
+       "line": 75
+      },
+      {
+       "name": "_pickTime",
+       "line": 87
+      },
+      {
+       "name": "_save",
+       "line": 114
+      },
+      {
+       "name": "build",
+       "line": 157
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../models/activity_models.dart",
+    "../../../utils/focus.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "lines": 827,
+   "kb": 27,
+   "classes": [
+    {
+     "name": "ExtracurricularActivityForm",
+     "file": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+     "startLine": 12,
+     "endLine": 25,
+     "lines": 14,
+     "widgetOf": null,
+     "methods": [
+      "ExtracurricularActivityForm"
+     ],
+     "methodLines": [
+      {
+       "name": "ExtracurricularActivityForm",
+       "line": 16
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ExtracurricularActivityFormState",
+     "file": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+     "startLine": 27,
+     "endLine": 826,
+     "lines": 800,
+     "widgetOf": "ExtracurricularActivityForm",
+     "methods": [
+      "initState",
+      "dispose",
+      "_formatDate",
+      "_formatTime",
+      "_pickDate",
+      "_pickTime",
+      "_recurrenceLabel",
+      "_buildRecurrence",
+      "_hasTimeError",
+      "_buildActivity",
+      "_save",
+      "_showConflictWarning",
+      "_finishSave",
+      "_sectionTitle",
+      "_timeCard",
+      "_repeatOption",
+      "_weekdayChip",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 43
+      },
+      {
+       "name": "dispose",
+       "line": 53
+      },
+      {
+       "name": "_formatDate",
+       "line": 58
+      },
+      {
+       "name": "_formatTime",
+       "line": 76
+      },
+      {
+       "name": "_pickDate",
+       "line": 83
+      },
+      {
+       "name": "_pickTime",
+       "line": 106
+      },
+      {
+       "name": "_recurrenceLabel",
+       "line": 129
+      },
+      {
+       "name": "_buildRecurrence",
+       "line": 146
+      },
+      {
+       "name": "_hasTimeError",
+       "line": 166
+      },
+      {
+       "name": "_buildActivity",
+       "line": 171
+      },
+      {
+       "name": "_save",
+       "line": 191
+      },
+      {
+       "name": "_showConflictWarning",
+       "line": 321
+      },
+      {
+       "name": "_finishSave",
+       "line": 364
+      },
+      {
+       "name": "_sectionTitle",
+       "line": 370
+      },
+      {
+       "name": "_timeCard",
+       "line": 384
+      },
+      {
+       "name": "_repeatOption",
+       "line": 423
+      },
+      {
+       "name": "_weekdayChip",
+       "line": 468
+      },
+      {
+       "name": "build",
+       "line": 494
+      }
+     ],
+     "storeRefs": 1,
+     "dialogs": 3,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../data/store.dart",
+    "../../../models/activity_models.dart",
+    "../../../services/bagi_message.dart",
+    "../../../widgets/bagi_character.dart",
+    "../../../utils/focus.dart",
+    "../widgets/conflict_card.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "lines": 825,
+   "kb": 27,
+   "classes": [
+    {
+     "name": "LessonActivityForm",
+     "file": "lib/features/schedule/forms/lesson_activity_form.dart",
+     "startLine": 12,
+     "endLine": 24,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "LessonActivityForm"
+     ],
+     "methodLines": [
+      {
+       "name": "LessonActivityForm",
+       "line": 16
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_LessonActivityFormState",
+     "file": "lib/features/schedule/forms/lesson_activity_form.dart",
+     "startLine": 26,
+     "endLine": 824,
+     "lines": 799,
+     "widgetOf": "LessonActivityForm",
+     "methods": [
+      "initState",
+      "dispose",
+      "_formatDate",
+      "_formatTime",
+      "_pickDate",
+      "_pickTime",
+      "_recurrenceLabel",
+      "_buildRecurrence",
+      "_hasTimeError",
+      "_buildActivity",
+      "_save",
+      "_showConflictWarning",
+      "_finishSave",
+      "_sectionTitle",
+      "_timeCard",
+      "_repeatOption",
+      "_weekdayChip",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 41
+      },
+      {
+       "name": "dispose",
+       "line": 51
+      },
+      {
+       "name": "_formatDate",
+       "line": 56
+      },
+      {
+       "name": "_formatTime",
+       "line": 74
+      },
+      {
+       "name": "_pickDate",
+       "line": 81
+      },
+      {
+       "name": "_pickTime",
+       "line": 104
+      },
+      {
+       "name": "_recurrenceLabel",
+       "line": 121
+      },
+      {
+       "name": "_buildRecurrence",
+       "line": 138
+      },
+      {
+       "name": "_hasTimeError",
+       "line": 163
+      },
+      {
+       "name": "_buildActivity",
+       "line": 168
+      },
+      {
+       "name": "_save",
+       "line": 189
+      },
+      {
+       "name": "_showConflictWarning",
+       "line": 319
+      },
+      {
+       "name": "_finishSave",
+       "line": 362
+      },
+      {
+       "name": "_sectionTitle",
+       "line": 368
+      },
+      {
+       "name": "_timeCard",
+       "line": 382
+      },
+      {
+       "name": "_repeatOption",
+       "line": 421
+      },
+      {
+       "name": "_weekdayChip",
+       "line": 466
+      },
+      {
+       "name": "build",
+       "line": 492
+      }
+     ],
+     "storeRefs": 1,
+     "dialogs": 3,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../data/store.dart",
+    "../../../models/activity_models.dart",
+    "../../../services/bagi_message.dart",
+    "../../../widgets/bagi_character.dart",
+    "../../../utils/focus.dart",
+    "../widgets/conflict_card.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/forms/school_activity_form.dart",
+   "lines": 746,
+   "kb": 24,
+   "classes": [
+    {
+     "name": "SchoolActivityForm",
+     "file": "lib/features/schedule/forms/school_activity_form.dart",
+     "startLine": 10,
+     "endLine": 22,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "SchoolActivityForm"
+     ],
+     "methodLines": [
+      {
+       "name": "SchoolActivityForm",
+       "line": 14
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_SchoolActivityFormState",
+     "file": "lib/features/schedule/forms/school_activity_form.dart",
+     "startLine": 24,
+     "endLine": 745,
+     "lines": 722,
+     "widgetOf": "SchoolActivityForm",
+     "methods": [
+      "initState",
+      "dispose",
+      "_formatDate",
+      "_formatTime",
+      "_pickDate",
+      "_pickTime",
+      "_recurrenceLabel",
+      "_buildRecurrence",
+      "_hasTimeError",
+      "_buildActivity",
+      "_save",
+      "_showConflictWarning",
+      "_finishSave",
+      "_sectionTitle",
+      "_timeCard",
+      "_repeatOption",
+      "_weekdayChip",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 45
+      },
+      {
+       "name": "dispose",
+       "line": 55
+      },
+      {
+       "name": "_formatDate",
+       "line": 60
+      },
+      {
+       "name": "_formatTime",
+       "line": 78
+      },
+      {
+       "name": "_pickDate",
+       "line": 85
+      },
+      {
+       "name": "_pickTime",
+       "line": 108
+      },
+      {
+       "name": "_recurrenceLabel",
+       "line": 125
+      },
+      {
+       "name": "_buildRecurrence",
+       "line": 142
+      },
+      {
+       "name": "_hasTimeError",
+       "line": 167
+      },
+      {
+       "name": "_buildActivity",
+       "line": 172
+      },
+      {
+       "name": "_save",
+       "line": 192
+      },
+      {
+       "name": "_showConflictWarning",
+       "line": 240
+      },
+      {
+       "name": "_finishSave",
+       "line": 283
+      },
+      {
+       "name": "_sectionTitle",
+       "line": 289
+      },
+      {
+       "name": "_timeCard",
+       "line": 303
+      },
+      {
+       "name": "_repeatOption",
+       "line": 342
+      },
+      {
+       "name": "_weekdayChip",
+       "line": 387
+      },
+      {
+       "name": "build",
+       "line": 413
+      }
+     ],
+     "storeRefs": 1,
+     "dialogs": 2,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../data/store.dart",
+    "../../../models/activity_models.dart",
+    "../../../utils/focus.dart",
+    "../widgets/conflict_card.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/schedule_page.dart",
+   "lines": 3726,
+   "kb": 144,
+   "classes": [
+    {
+     "name": "SchedulePage",
+     "file": "lib/features/schedule/schedule_page.dart",
+     "startLine": 29,
+     "endLine": 41,
+     "lines": 13,
+     "widgetOf": null,
+     "methods": [
+      "SchedulePage"
+     ],
+     "methodLines": [
+      {
+       "name": "SchedulePage",
+       "line": 33
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_SchedulePageState",
+     "file": "lib/features/schedule/schedule_page.dart",
+     "startLine": 43,
+     "endLine": 3322,
+     "lines": 3280,
+     "widgetOf": "SchedulePage",
+     "methods": [
+      "_personalizeBagi",
+      "initState",
+      "_runScheduleTutorial",
+      "_startBagiScheduleConversation",
+      "_showNextBagiScheduleThought",
+      "_bagiActivityCategory",
+      "_buildBagiUpcomingReminderThoughts",
+      "_buildBagiScheduleThoughts",
+      "_mondayOf",
+      "_dateForWeekPage",
+      "dispose",
+      "_buildDateSummaryMessage",
+      "_onScheduleDateSelected",
+      "_showBagiScheduleMessage",
+      "_goToToday",
+      "_buildBagiHighlightedText",
+      "_buildEmptyScheduleCard",
+      "_buildBagiScheduleBubble",
+      "_activityChoice",
+      "_afterActivitySaved",
+      "_showSchoolForm",
+      "_showLessonForm",
+      "_showExtracurricularForm",
+      "_showEventForm",
+      "_showExamForm",
+      "_showPreparationOffer",
+      "_formatFriendlyDate",
+      "_activityCategoryLabel",
+      "_showFriendlyTimeWarning",
+      "_showEditActivityDialog",
+      "_formatDateShort",
+      "_formatTimeOfDay24",
+      "_confirmDeleteActivity",
+      "_savedActivitiesForSelectedDate",
+      "_homeworkForSelectedDate",
+      "_openHomeworkFromSchedule",
+      "_timelineType",
+      "_timelineIcon",
+      "_timelineBackground",
+      "_timelineColor",
+      "_formatTimelineTime",
+      "dayName",
+      "monthName",
+      "fullDate",
+      "_calendarIndicators",
+      "openCalendar",
+      "_showAddActivityChooser",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_personalizeBagi",
+       "line": 59
+      },
+      {
+       "name": "initState",
+       "line": 71
+      },
+      {
+       "name": "_runScheduleTutorial",
+       "line": 88
+      },
+      {
+       "name": "_startBagiScheduleConversation",
+       "line": 120
+      },
+      {
+       "name": "_showNextBagiScheduleThought",
+       "line": 130
+      },
+      {
+       "name": "_bagiActivityCategory",
+       "line": 150
+      },
+      {
+       "name": "_buildBagiUpcomingReminderThoughts",
+       "line": 165
+      },
+      {
+       "name": "_buildBagiScheduleThoughts",
+       "line": 194
+      },
+      {
+       "name": "_mondayOf",
+       "line": 312
+      },
+      {
+       "name": "_dateForWeekPage",
+       "line": 319
+      },
+      {
+       "name": "dispose",
+       "line": 325
+      },
+      {
+       "name": "_buildDateSummaryMessage",
+       "line": 332
+      },
+      {
+       "name": "_onScheduleDateSelected",
+       "line": 419
+      },
+      {
+       "name": "_showBagiScheduleMessage",
+       "line": 440
+      },
+      {
+       "name": "_goToToday",
+       "line": 475
+      },
+      {
+       "name": "_buildBagiHighlightedText",
+       "line": 504
+      },
+      {
+       "name": "_buildEmptyScheduleCard",
+       "line": 586
+      },
+      {
+       "name": "_buildBagiScheduleBubble",
+       "line": 651
+      },
+      {
+       "name": "_activityChoice",
+       "line": 694
+      },
+      {
+       "name": "_afterActivitySaved",
+       "line": 733
+      },
+      {
+       "name": "_showSchoolForm",
+       "line": 799
+      },
+      {
+       "name": "_showLessonForm",
+       "line": 817
+      },
+      {
+       "name": "_showExtracurricularForm",
+       "line": 835
+      },
+      {
+       "name": "_showEventForm",
+       "line": 853
+      },
+      {
+       "name": "_showExamForm",
+       "line": 871
+      },
+      {
+       "name": "_showPreparationOffer",
+       "line": 893
+      },
+      {
+       "name": "_formatFriendlyDate",
+       "line": 1004
+      },
+      {
+       "name": "_activityCategoryLabel",
+       "line": 1031
+      },
+      {
+       "name": "_showFriendlyTimeWarning",
+       "line": 1046
+      },
+      {
+       "name": "_showEditActivityDialog",
+       "line": 1155
+      },
+      {
+       "name": "_formatDateShort",
+       "line": 2246
+      },
+      {
+       "name": "_formatTimeOfDay24",
+       "line": 2264
+      },
+      {
+       "name": "_confirmDeleteActivity",
+       "line": 2269
+      },
+      {
+       "name": "_savedActivitiesForSelectedDate",
+       "line": 2469
+      },
+      {
+       "name": "_homeworkForSelectedDate",
+       "line": 2480
+      },
+      {
+       "name": "_openHomeworkFromSchedule",
+       "line": 2504
+      },
+      {
+       "name": "_timelineType",
+       "line": 2511
+      },
+      {
+       "name": "_timelineIcon",
+       "line": 2526
+      },
+      {
+       "name": "_timelineBackground",
+       "line": 2541
+      },
+      {
+       "name": "_timelineColor",
+       "line": 2556
+      },
+      {
+       "name": "_formatTimelineTime",
+       "line": 2571
+      },
+      {
+       "name": "dayName",
+       "line": 2577
+      },
+      {
+       "name": "monthName",
+       "line": 2583
+      },
+      {
+       "name": "fullDate",
+       "line": 2602
+      },
+      {
+       "name": "_calendarIndicators",
+       "line": 2639
+      },
+      {
+       "name": "openCalendar",
+       "line": 2723
+      },
+      {
+       "name": "_showAddActivityChooser",
+       "line": 2744
+      },
+      {
+       "name": "build",
+       "line": 2867
+      }
+     ],
+     "storeRefs": 66,
+     "dialogs": 14,
+     "permissions": 10,
+     "navigations": [
+      "HomeworkPage",
+      "PreparationPage",
+      "SettingsPage"
+     ],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ScheduleTimelineItem",
+     "file": "lib/features/schedule/schedule_page.dart",
+     "startLine": 3324,
+     "endLine": 3350,
+     "lines": 27,
+     "widgetOf": null,
+     "methods": [
+      "ScheduleTimelineItem"
+     ],
+     "methodLines": [
+      {
+       "name": "ScheduleTimelineItem",
+       "line": 3335
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ScheduleTimelineItemState",
+     "file": "lib/features/schedule/schedule_page.dart",
+     "startLine": 3352,
+     "endLine": 3582,
+     "lines": 231,
+     "widgetOf": "ScheduleTimelineItem",
+     "methods": [
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "build",
+       "line": 3357
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiConflictCard",
+     "file": "lib/features/schedule/schedule_page.dart",
+     "startLine": 3584,
+     "endLine": 3725,
+     "lines": 142,
+     "widgetOf": null,
+     "methods": [
+      "BagiConflictCard",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiConflictCard",
+       "line": 3589
+      },
+      {
+       "name": "build",
+       "line": 3596
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/activity_models.dart",
+    "../../models/family_models.dart",
+    "../../services/bagi_message.dart",
+    "../../theme/bag2school_tokens.dart",
+    "../../utils/focus.dart",
+    "../../widgets/bagi_character.dart",
+    "../../widgets/bagi_tutorial_overlay.dart",
+    "../../widgets/bubble_tail_painters.dart",
+    "../../widgets/list_items.dart",
+    "../../widgets/month_calendar.dart",
+    "../homework/homework_page.dart",
+    "forms/school_activity_form.dart",
+    "forms/lesson_activity_form.dart",
+    "forms/exam_activity_form.dart",
+    "forms/event_activity_form.dart",
+    "forms/extracurricular_activity_form.dart",
+    "../preparation/preparation_page.dart",
+    "../settings/settings_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/schedule/widgets/conflict_card.dart",
+   "lines": 151,
+   "kb": 5,
+   "classes": [
+    {
+     "name": "BagiConflictCard",
+     "file": "lib/features/schedule/widgets/conflict_card.dart",
+     "startLine": 9,
+     "endLine": 150,
+     "lines": 142,
+     "widgetOf": null,
+     "methods": [
+      "BagiConflictCard",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiConflictCard",
+       "line": 14
+      },
+      {
+       "name": "build",
+       "line": 21
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../../models/activity_models.dart",
+    "../../../services/bagi_message.dart",
+    "../../../widgets/bagi_character.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/settings/local_account_page.dart",
+   "lines": 648,
+   "kb": 22,
+   "classes": [
+    {
+     "name": "LocalAccountPage",
+     "file": "lib/features/settings/local_account_page.dart",
+     "startLine": 14,
+     "endLine": 19,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "LocalAccountPage"
+     ],
+     "methodLines": [
+      {
+       "name": "LocalAccountPage",
+       "line": 15
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_LocalAccountPageState",
+     "file": "lib/features/settings/local_account_page.dart",
+     "startLine": 21,
+     "endLine": 647,
+     "lines": 627,
+     "widgetOf": "LocalAccountPage",
+     "methods": [
+      "_changePassword",
+      "_deleteAccount",
+      "_editAccount",
+      "_openBagiIdentitySettings",
+      "_showLocalSignIn",
+      "_roleLabel",
+      "_accessSummary",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_changePassword",
+       "line": 27
+      },
+      {
+       "name": "_deleteAccount",
+       "line": 112
+      },
+      {
+       "name": "_editAccount",
+       "line": 160
+      },
+      {
+       "name": "_openBagiIdentitySettings",
+       "line": 286
+      },
+      {
+       "name": "_showLocalSignIn",
+       "line": 297
+      },
+      {
+       "name": "_roleLabel",
+       "line": 359
+      },
+      {
+       "name": "_accessSummary",
+       "line": 372
+      },
+      {
+       "name": "build",
+       "line": 491
+      }
+     ],
+     "storeRefs": 17,
+     "dialogs": 6,
+     "permissions": 0,
+     "navigations": [
+      "BagiIdentitySettingsPage"
+     ],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../data/store.dart",
+    "../../models/family_models.dart",
+    "../../widgets/app_notification.dart",
+    "../../bagi_identity_settings_page.dart",
+    "../../login_page.dart",
+    "../../services/bagi_auth_service.dart",
+    "../../services/bagi_family_service.dart",
+    "../../utils/controllers.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/features/settings/settings_page.dart",
+   "lines": 1576,
+   "kb": 52,
+   "classes": [
+    {
+     "name": "SettingsPage",
+     "file": "lib/features/settings/settings_page.dart",
+     "startLine": 24,
+     "endLine": 38,
+     "lines": 15,
+     "widgetOf": null,
+     "methods": [
+      "SettingsPage"
+     ],
+     "methodLines": [
+      {
+       "name": "SettingsPage",
+       "line": 29
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_SettingsPageState",
+     "file": "lib/features/settings/settings_page.dart",
+     "startLine": 40,
+     "endLine": 1406,
+     "lines": 1367,
+     "widgetOf": "SettingsPage",
+     "methods": [
+      "initState",
+      "dispose",
+      "_runOwnerSetupTutorial",
+      "_runFamilySettingsTutorial",
+      "_runChildFormTutorial",
+      "_chooseLanguage",
+      "_editChildProfile",
+      "_showComingSoon",
+      "_sectionTitle",
+      "_settingTile",
+      "_buildAccountCard",
+      "_showChildEditor",
+      "_chooseSettingsChild",
+      "_activateChild",
+      "_buildChildProfilesSection",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 63
+      },
+      {
+       "name": "dispose",
+       "line": 78
+      },
+      {
+       "name": "_runOwnerSetupTutorial",
+       "line": 84
+      },
+      {
+       "name": "_runFamilySettingsTutorial",
+       "line": 153
+      },
+      {
+       "name": "_runChildFormTutorial",
+       "line": 191
+      },
+      {
+       "name": "_chooseLanguage",
+       "line": 251
+      },
+      {
+       "name": "_editChildProfile",
+       "line": 318
+      },
+      {
+       "name": "_showComingSoon",
+       "line": 486
+      },
+      {
+       "name": "_sectionTitle",
+       "line": 502
+      },
+      {
+       "name": "_settingTile",
+       "line": 517
+      },
+      {
+       "name": "_buildAccountCard",
+       "line": 571
+      },
+      {
+       "name": "_showChildEditor",
+       "line": 654
+      },
+      {
+       "name": "_chooseSettingsChild",
+       "line": 1029
+      },
+      {
+       "name": "_activateChild",
+       "line": 1090
+      },
+      {
+       "name": "_buildChildProfilesSection",
+       "line": 1105
+      },
+      {
+       "name": "build",
+       "line": 1213
+      }
+     ],
+     "storeRefs": 32,
+     "dialogs": 7,
+     "permissions": 0,
+     "navigations": [
+      "BagiIdentitySettingsPage",
+      "FamilyActivityPage",
+      "FamilySettingsPage",
+      "LocalAccountPage"
+     ],
+     "supabaseTables": [
+      "children"
+     ],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_DailyReminderTile",
+     "file": "lib/features/settings/settings_page.dart",
+     "startLine": 1408,
+     "endLine": 1413,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "_DailyReminderTile"
+     ],
+     "methodLines": [
+      {
+       "name": "_DailyReminderTile",
+       "line": 1409
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_DailyReminderTileState",
+     "file": "lib/features/settings/settings_page.dart",
+     "startLine": 1415,
+     "endLine": 1575,
+     "lines": 161,
+     "widgetOf": "_DailyReminderTile",
+     "methods": [
+      "initState",
+      "_load",
+      "_toggle",
+      "_pickTime",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 1427
+      },
+      {
+       "name": "_load",
+       "line": 1432
+      },
+      {
+       "name": "_toggle",
+       "line": 1448
+      },
+      {
+       "name": "_pickTime",
+       "line": 1483
+      },
+      {
+       "name": "build",
+       "line": 1506
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../../bagi_identity_settings_page.dart",
+    "../../data/store.dart",
+    "../../models/child_profile.dart",
+    "../../models/family_models.dart",
+    "../../services/owner_tutorial_state.dart",
+    "../../services/reminder_content.dart",
+    "../../services/reminder_service.dart",
+    "../../utils/controllers.dart",
+    "../../widgets/app_notification.dart",
+    "../../widgets/bagi_tutorial_overlay.dart",
+    "../../widgets/child_avatar.dart",
+    "../family/family_activity_page.dart",
+    "../family/family_settings_page.dart",
+    "local_account_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [
+    "children"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/login_page.dart",
+   "lines": 522,
+   "kb": 19,
+   "classes": [
+    {
+     "name": "LoginPage",
+     "file": "lib/login_page.dart",
+     "startLine": 12,
+     "endLine": 17,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "LoginPage"
+     ],
+     "methodLines": [
+      {
+       "name": "LoginPage",
+       "line": 13
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_LoginPageState",
+     "file": "lib/login_page.dart",
+     "startLine": 19,
+     "endLine": 521,
+     "lines": 503,
+     "widgetOf": "LoginPage",
+     "methods": [
+      "dispose",
+      "_forgotPassword",
+      "_signIn",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "dispose",
+       "line": 33
+      },
+      {
+       "name": "_forgotPassword",
+       "line": 39
+      },
+      {
+       "name": "_signIn",
+       "line": 131
+      },
+      {
+       "name": "build",
+       "line": 250
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 4,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "services/bagi_auth_service.dart",
+    "signup_page.dart",
+    "auth_gate.dart",
+    "features/home/home_page.dart",
+    "theme/bag2school_tokens.dart",
+    "widgets/bagi_character.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/main.dart",
+   "lines": 563,
+   "kb": 19,
+   "classes": [
+    {
+     "name": "_BagiErrorScreen",
+     "file": "lib/main.dart",
+     "startLine": 196,
+     "endLine": 257,
+     "lines": 62,
+     "widgetOf": null,
+     "methods": [
+      "_BagiErrorScreen",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_BagiErrorScreen",
+       "line": 197
+      },
+      {
+       "name": "build",
+       "line": 202
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolApp",
+     "file": "lib/main.dart",
+     "startLine": 259,
+     "endLine": 344,
+     "lines": 86,
+     "widgetOf": null,
+     "methods": [
+      "Bag2SchoolApp",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "Bag2SchoolApp",
+       "line": 260
+      },
+      {
+       "name": "build",
+       "line": 263
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolSuccessNotification",
+     "file": "lib/main.dart",
+     "startLine": 350,
+     "endLine": 455,
+     "lines": 106,
+     "widgetOf": null,
+     "methods": [
+      "show"
+     ],
+     "methodLines": [
+      {
+       "name": "show",
+       "line": 351
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 1,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiSmallCharacter",
+     "file": "lib/main.dart",
+     "startLine": 465,
+     "endLine": 472,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [
+      "BagiSmallCharacter",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiSmallCharacter",
+       "line": 466
+      },
+      {
+       "name": "build",
+       "line": 469
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiMiniCharacter",
+     "file": "lib/main.dart",
+     "startLine": 474,
+     "endLine": 489,
+     "lines": 16,
+     "widgetOf": null,
+     "methods": [
+      "BagiMiniCharacter",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiMiniCharacter",
+       "line": 475
+      },
+      {
+       "name": "build",
+       "line": 478
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "config/supabase_config.dart",
+    "services/bagi_app_bootstrap.dart",
+    "services/bagi_auth_service.dart",
+    "services/reminder_content.dart",
+    "services/reminder_service.dart",
+    "theme/bag2school_tokens.dart",
+    "data/store.dart",
+    "features/home/home_page.dart",
+    "reset_password_page.dart",
+    "auth_gate.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/models/activity_models.dart",
+   "lines": 462,
+   "kb": 11,
+   "classes": [
+    {
+     "name": "TimeOfDayData",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 22,
+     "endLine": 29,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [
+      "TimeOfDayData"
+     ],
+     "methodLines": [
+      {
+       "name": "TimeOfDayData",
+       "line": 26
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ActivityRecurrence",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 31,
+     "endLine": 101,
+     "lines": 71,
+     "widgetOf": null,
+     "methods": [
+      "ActivityRecurrence",
+      "occursOn",
+      "_monthsBetween",
+      "_weeksBetween"
+     ],
+     "methodLines": [
+      {
+       "name": "ActivityRecurrence",
+       "line": 37
+      },
+      {
+       "name": "occursOn",
+       "line": 44
+      },
+      {
+       "name": "_monthsBetween",
+       "line": 94
+      },
+      {
+       "name": "_weeksBetween",
+       "line": 98
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "HomeworkDetails",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 103,
+     "endLine": 133,
+     "lines": 31,
+     "widgetOf": null,
+     "methods": [
+      "HomeworkDetails",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "HomeworkDetails",
+       "line": 110
+      },
+      {
+       "name": "copyWith",
+       "line": 118
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagActivity",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 135,
+     "endLine": 212,
+     "lines": 78,
+     "widgetOf": null,
+     "methods": [
+      "BagActivity",
+      "occursOn",
+      "startMinutes",
+      "endMinutes",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "BagActivity",
+       "line": 151
+      },
+      {
+       "name": "occursOn",
+       "line": 168
+      },
+      {
+       "name": "startMinutes",
+       "line": 172
+      },
+      {
+       "name": "endMinutes",
+       "line": 176
+      },
+      {
+       "name": "copyWith",
+       "line": 180
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "PreparationItem",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 214,
+     "endLine": 268,
+     "lines": 55,
+     "widgetOf": null,
+     "methods": [
+      "PreparationItem",
+      "copyWith",
+      "occursOn"
+     ],
+     "methodLines": [
+      {
+       "name": "PreparationItem",
+       "line": 225
+      },
+      {
+       "name": "copyWith",
+       "line": 237
+      },
+      {
+       "name": "occursOn",
+       "line": 259
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "HomeworkItem",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 270,
+     "endLine": 337,
+     "lines": 68,
+     "widgetOf": null,
+     "methods": [
+      "HomeworkItem",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "HomeworkItem",
+       "line": 285
+      },
+      {
+       "name": "copyWith",
+       "line": 301
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ActivityConflict",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 339,
+     "endLine": 349,
+     "lines": 11,
+     "widgetOf": null,
+     "methods": [
+      "ActivityConflict"
+     ],
+     "methodLines": [
+      {
+       "name": "ActivityConflict",
+       "line": 344
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ActivityConflictDetector",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 351,
+     "endLine": 423,
+     "lines": 73,
+     "widgetOf": null,
+     "methods": [
+      "ActivityConflictDetector",
+      "findConflicts",
+      "_overlappingDates"
+     ],
+     "methodLines": [
+      {
+       "name": "ActivityConflictDetector",
+       "line": 352
+      },
+      {
+       "name": "findConflicts",
+       "line": 354
+      },
+      {
+       "name": "_overlappingDates",
+       "line": 389
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "CalendarIndicator",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 425,
+     "endLine": 446,
+     "lines": 22,
+     "widgetOf": null,
+     "methods": [
+      "CalendarIndicator"
+     ],
+     "methodLines": [
+      {
+       "name": "CalendarIndicator",
+       "line": 428
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ChildDayData",
+     "file": "lib/models/activity_models.dart",
+     "startLine": 448,
+     "endLine": 461,
+     "lines": 14,
+     "widgetOf": null,
+     "methods": [
+      "ChildDayData"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildDayData",
+       "line": 449
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/models/child_profile.dart",
+   "lines": 32,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "ChildProfile",
+     "file": "lib/models/child_profile.dart",
+     "startLine": 1,
+     "endLine": 31,
+     "lines": 31,
+     "widgetOf": null,
+     "methods": [
+      "ChildProfile",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildProfile",
+       "line": 8
+      },
+      {
+       "name": "copyWith",
+       "line": 16
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/models/family_models.dart",
+   "lines": 243,
+   "kb": 6,
+   "classes": [
+    {
+     "name": "LocalAccount",
+     "file": "lib/models/family_models.dart",
+     "startLine": 12,
+     "endLine": 41,
+     "lines": 30,
+     "widgetOf": null,
+     "methods": [
+      "LocalAccount",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "LocalAccount",
+       "line": 19
+      },
+      {
+       "name": "copyWith",
+       "line": 27
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "FamilyMember",
+     "file": "lib/models/family_models.dart",
+     "startLine": 43,
+     "endLine": 69,
+     "lines": 27,
+     "widgetOf": null,
+     "methods": [
+      "FamilyMember",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilyMember",
+       "line": 49
+      },
+      {
+       "name": "copyWith",
+       "line": 56
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "FamilyAccessGrant",
+     "file": "lib/models/family_models.dart",
+     "startLine": 71,
+     "endLine": 121,
+     "lines": 51,
+     "widgetOf": null,
+     "methods": [
+      "FamilyAccessGrant",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "FamilyAccessGrant",
+       "line": 83
+      },
+      {
+       "name": "copyWith",
+       "line": 96
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ChildAccessSettings",
+     "file": "lib/models/family_models.dart",
+     "startLine": 123,
+     "endLine": 158,
+     "lines": 36,
+     "widgetOf": null,
+     "methods": [
+      "ChildAccessSettings",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildAccessSettings",
+       "line": 131
+      },
+      {
+       "name": "copyWith",
+       "line": 140
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "LocalAccessRequest",
+     "file": "lib/models/family_models.dart",
+     "startLine": 160,
+     "endLine": 190,
+     "lines": 31,
+     "widgetOf": null,
+     "methods": [
+      "LocalAccessRequest",
+      "copyWith"
+     ],
+     "methodLines": [
+      {
+       "name": "LocalAccessRequest",
+       "line": 169
+      },
+      {
+       "name": "copyWith",
+       "line": 179
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "LocalFamilyNotification",
+     "file": "lib/models/family_models.dart",
+     "startLine": 192,
+     "endLine": 212,
+     "lines": 21,
+     "widgetOf": null,
+     "methods": [
+      "LocalFamilyNotification"
+     ],
+     "methodLines": [
+      {
+       "name": "LocalFamilyNotification",
+       "line": 202
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "LocalFamilyActivity",
+     "file": "lib/models/family_models.dart",
+     "startLine": 214,
+     "endLine": 242,
+     "lines": 29,
+     "widgetOf": null,
+     "methods": [
+      "LocalFamilyActivity"
+     ],
+     "methodLines": [
+      {
+       "name": "LocalFamilyActivity",
+       "line": 228
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/reset_password_page.dart",
+   "lines": 230,
+   "kb": 7,
+   "classes": [
+    {
+     "name": "ResetPasswordPage",
+     "file": "lib/reset_password_page.dart",
+     "startLine": 9,
+     "endLine": 14,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "ResetPasswordPage"
+     ],
+     "methodLines": [
+      {
+       "name": "ResetPasswordPage",
+       "line": 10
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_ResetPasswordPageState",
+     "file": "lib/reset_password_page.dart",
+     "startLine": 16,
+     "endLine": 229,
+     "lines": 214,
+     "widgetOf": "ResetPasswordPage",
+     "methods": [
+      "dispose",
+      "_submit",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "dispose",
+       "line": 30
+      },
+      {
+       "name": "_submit",
+       "line": 36
+      },
+      {
+       "name": "build",
+       "line": 109
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 1,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "services/bagi_auth_service.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_app_bootstrap.dart",
+   "lines": 10,
+   "kb": 0,
+   "classes": [
+    {
+     "name": "BagiAppBootstrap",
+     "file": "lib/services/bagi_app_bootstrap.dart",
+     "startLine": 3,
+     "endLine": 9,
+     "lines": 7,
+     "widgetOf": null,
+     "methods": [
+      "initialize"
+     ],
+     "methodLines": [
+      {
+       "name": "initialize",
+       "line": 6
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_identity_bootstrap.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_auth_service.dart",
+   "lines": 413,
+   "kb": 14,
+   "classes": [
+    {
+     "name": "SignUpOutcome",
+     "file": "lib/services/bagi_auth_service.dart",
+     "startLine": 9,
+     "endLine": 14,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "SignUpOutcome"
+     ],
+     "methodLines": [
+      {
+       "name": "SignUpOutcome",
+       "line": 10
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiAuthService",
+     "file": "lib/services/bagi_auth_service.dart",
+     "startLine": 34,
+     "endLine": 412,
+     "lines": 379,
+     "widgetOf": null,
+     "methods": [
+      "signIn",
+      "_isNetworkFailure",
+      "signUp",
+      "_isSignupTimeout",
+      "_rememberThisDeviceSignIn",
+      "detectSignInOnAnotherDevice",
+      "requestPasswordReset",
+      "completePasswordRecovery",
+      "signOut",
+      "updatePassword"
+     ],
+     "methodLines": [
+      {
+       "name": "signIn",
+       "line": 39
+      },
+      {
+       "name": "_isNetworkFailure",
+       "line": 125
+      },
+      {
+       "name": "signUp",
+       "line": 138
+      },
+      {
+       "name": "_isSignupTimeout",
+       "line": 268
+      },
+      {
+       "name": "_rememberThisDeviceSignIn",
+       "line": 279
+      },
+      {
+       "name": "detectSignInOnAnotherDevice",
+       "line": 295
+      },
+      {
+       "name": "requestPasswordReset",
+       "line": 334
+      },
+      {
+       "name": "completePasswordRecovery",
+       "line": 354
+      },
+      {
+       "name": "signOut",
+       "line": 382
+      },
+      {
+       "name": "updatePassword",
+       "line": 392
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_identity_controller.dart"
+   ],
+   "usesPrefs": true,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_avatar_service.dart",
+   "lines": 51,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "BagiAvatarService",
+     "file": "lib/services/bagi_avatar_service.dart",
+     "startLine": 5,
+     "endLine": 50,
+     "lines": 46,
+     "widgetOf": null,
+     "methods": [
+      "childAvatarPath",
+      "uploadChildAvatar",
+      "deleteChildAvatar",
+      "createChildAvatarSignedUrl"
+     ],
+     "methodLines": [
+      {
+       "name": "childAvatarPath",
+       "line": 12
+      },
+      {
+       "name": "uploadChildAvatar",
+       "line": 19
+      },
+      {
+       "name": "deleteChildAvatar",
+       "line": 38
+      },
+      {
+       "name": "createChildAvatarSignedUrl",
+       "line": 42
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_family_service.dart",
+   "lines": 663,
+   "kb": 18,
+   "classes": [
+    {
+     "name": "BagiFamilyService",
+     "file": "lib/services/bagi_family_service.dart",
+     "startLine": 4,
+     "endLine": 662,
+     "lines": 659,
+     "widgetOf": null,
+     "methods": [
+      "createFamily",
+      "createFamilyInvitation",
+      "renameFamily",
+      "deleteOwnAccount"
+     ],
+     "methodLines": [
+      {
+       "name": "createFamily",
+       "line": 133
+      },
+      {
+       "name": "createFamilyInvitation",
+       "line": 259
+      },
+      {
+       "name": "renameFamily",
+       "line": 612
+      },
+      {
+       "name": "deleteOwnAccount",
+       "line": 653
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "children",
+      "families",
+      "family_invitation_codes",
+      "family_invitations",
+      "family_join_requests",
+      "family_members"
+     ],
+     "supabaseRpc": [
+      "consume_family_invitation_link",
+      "create_family",
+      "create_family_invitation_link",
+      "delete_own_account",
+      "find_profile_by_email",
+      "join_family_with_invitation_code",
+      "leave_family_with_transfer",
+      "validate_family_invitation_code"
+     ]
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [
+    "children",
+    "families",
+    "family_invitation_codes",
+    "family_invitations",
+    "family_join_requests",
+    "family_members"
+   ],
+   "rpc": [
+    "consume_family_invitation_link",
+    "create_family",
+    "create_family_invitation_link",
+    "delete_own_account",
+    "find_profile_by_email",
+    "join_family_with_invitation_code",
+    "leave_family_with_transfer",
+    "validate_family_invitation_code"
+   ]
+  },
+  {
+   "path": "lib/services/bagi_greeting_service.dart",
+   "lines": 77,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "BagiGreetingService",
+     "file": "lib/services/bagi_greeting_service.dart",
+     "startLine": 1,
+     "endLine": 76,
+     "lines": 76,
+     "widgetOf": null,
+     "methods": [
+      "parentTitle",
+      "greeting",
+      "morning",
+      "afternoon",
+      "evening",
+      "current",
+      "night"
+     ],
+     "methodLines": [
+      {
+       "name": "parentTitle",
+       "line": 10
+      },
+      {
+       "name": "greeting",
+       "line": 20
+      },
+      {
+       "name": "morning",
+       "line": 26
+      },
+      {
+       "name": "afternoon",
+       "line": 33
+      },
+      {
+       "name": "evening",
+       "line": 40
+      },
+      {
+       "name": "current",
+       "line": 47
+      },
+      {
+       "name": "night",
+       "line": 70
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_identity_bootstrap.dart",
+   "lines": 46,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "BagiIdentityBootstrap",
+     "file": "lib/services/bagi_identity_bootstrap.dart",
+     "startLine": 5,
+     "endLine": 45,
+     "lines": 41,
+     "widgetOf": null,
+     "methods": [
+      "initialize",
+      "refresh",
+      "clear"
+     ],
+     "methodLines": [
+      {
+       "name": "initialize",
+       "line": 12
+      },
+      {
+       "name": "refresh",
+       "line": 33
+      },
+      {
+       "name": "clear",
+       "line": 41
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_session_bridge.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_identity_controller.dart",
+   "lines": 198,
+   "kb": 5,
+   "classes": [
+    {
+     "name": "BagiIdentityController",
+     "file": "lib/services/bagi_identity_controller.dart",
+     "startLine": 6,
+     "endLine": 197,
+     "lines": 192,
+     "widgetOf": null,
+     "methods": [
+      "load",
+      "saveIdentity",
+      "clear",
+      "resolveAddressName",
+      "personalize",
+      "morningGreeting",
+      "afternoonGreeting",
+      "eveningGreeting",
+      "nightGreeting"
+     ],
+     "methodLines": [
+      {
+       "name": "load",
+       "line": 49
+      },
+      {
+       "name": "saveIdentity",
+       "line": 89
+      },
+      {
+       "name": "clear",
+       "line": 111
+      },
+      {
+       "name": "resolveAddressName",
+       "line": 125
+      },
+      {
+       "name": "personalize",
+       "line": 161
+      },
+      {
+       "name": "morningGreeting",
+       "line": 178
+      },
+      {
+       "name": "afternoonGreeting",
+       "line": 183
+      },
+      {
+       "name": "eveningGreeting",
+       "line": 188
+      },
+      {
+       "name": "nightGreeting",
+       "line": 193
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_profile_service.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_local_auth_service.dart",
+   "lines": 60,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "BagiLocalAuthService",
+     "file": "lib/services/bagi_local_auth_service.dart",
+     "startLine": 5,
+     "endLine": 59,
+     "lines": 55,
+     "widgetOf": null,
+     "methods": [
+      "signIn",
+      "signOut"
+     ],
+     "methodLines": [
+      {
+       "name": "signIn",
+       "line": 16
+      },
+      {
+       "name": "signOut",
+       "line": 46
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_identity_controller.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_message.dart",
+   "lines": 56,
+   "kb": 2,
+   "classes": [],
+   "imports": [
+    "../data/store.dart",
+    "../models/family_models.dart",
+    "bagi_identity_controller.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_profile_service.dart",
+   "lines": 99,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "BagiProfile",
+     "file": "lib/services/bagi_profile_service.dart",
+     "startLine": 3,
+     "endLine": 37,
+     "lines": 35,
+     "widgetOf": null,
+     "methods": [
+      "BagiProfile"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiProfile",
+       "line": 10
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiProfileService",
+     "file": "lib/services/bagi_profile_service.dart",
+     "startLine": 39,
+     "endLine": 98,
+     "lines": 60,
+     "widgetOf": null,
+     "methods": [
+      "loadCurrentProfile",
+      "loadCurrentParentTitle",
+      "updateIdentity"
+     ],
+     "methodLines": [
+      {
+       "name": "loadCurrentProfile",
+       "line": 44
+      },
+      {
+       "name": "loadCurrentParentTitle",
+       "line": 64
+      },
+      {
+       "name": "updateIdentity",
+       "line": 70
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "profiles"
+     ],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [
+    "profiles"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/bagi_session_bridge.dart",
+   "lines": 59,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "BagiSessionBridge",
+     "file": "lib/services/bagi_session_bridge.dart",
+     "startLine": 6,
+     "endLine": 58,
+     "lines": 53,
+     "widgetOf": null,
+     "methods": [
+      "refresh",
+      "clear"
+     ],
+     "methodLines": [
+      {
+       "name": "refresh",
+       "line": 9
+      },
+      {
+       "name": "clear",
+       "line": 35
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_identity_controller.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/family_access_defaults.dart",
+   "lines": 87,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "FamilyAccessDefaults",
+     "file": "lib/services/family_access_defaults.dart",
+     "startLine": 12,
+     "endLine": 86,
+     "lines": 75,
+     "widgetOf": null,
+     "methods": [
+      "_accessKey",
+      "_knownMembersKey",
+      "save",
+      "saveKnownMembers"
+     ],
+     "methodLines": [
+      {
+       "name": "_accessKey",
+       "line": 15
+      },
+      {
+       "name": "_knownMembersKey",
+       "line": 18
+      },
+      {
+       "name": "save",
+       "line": 21
+      },
+      {
+       "name": "saveKnownMembers",
+       "line": 75
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": true,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/owner_tutorial_state.dart",
+   "lines": 38,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "OwnerTutorialState",
+     "file": "lib/services/owner_tutorial_state.dart",
+     "startLine": 3,
+     "endLine": 37,
+     "lines": 35,
+     "widgetOf": null,
+     "methods": [
+      "_pendingKey",
+      "_completedKey",
+      "markPending",
+      "shouldShow",
+      "isCompleted",
+      "markCompleted"
+     ],
+     "methodLines": [
+      {
+       "name": "_pendingKey",
+       "line": 6
+      },
+      {
+       "name": "_completedKey",
+       "line": 8
+      },
+      {
+       "name": "markPending",
+       "line": 11
+      },
+      {
+       "name": "shouldShow",
+       "line": 18
+      },
+      {
+       "name": "isCompleted",
+       "line": 25
+      },
+      {
+       "name": "markCompleted",
+       "line": 31
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": true,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/preparation_defaults.dart",
+   "lines": 93,
+   "kb": 3,
+   "classes": [
+    {
+     "name": "PreparationDefaults",
+     "file": "lib/services/preparation_defaults.dart",
+     "startLine": 10,
+     "endLine": 92,
+     "lines": 83,
+     "widgetOf": null,
+     "methods": [
+      "builtInFor",
+      "_save"
+     ],
+     "methodLines": [
+      {
+       "name": "builtInFor",
+       "line": 29
+      },
+      {
+       "name": "_save",
+       "line": 73
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": true,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/reminder_content.dart",
+   "lines": 190,
+   "kb": 6,
+   "classes": [],
+   "imports": [
+    "../data/serializers.dart",
+    "../models/child_profile.dart",
+    "../data/store.dart",
+    "bagi_message.dart",
+    "reminder_service.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/reminder_service.dart",
+   "lines": 189,
+   "kb": 6,
+   "classes": [
+    {
+     "name": "DailyReminder",
+     "file": "lib/services/reminder_service.dart",
+     "startLine": 13,
+     "endLine": 188,
+     "lines": 176,
+     "widgetOf": null,
+     "methods": [
+      "initialize",
+      "isEnabled",
+      "reminderHour",
+      "reminderMinute",
+      "saveTime",
+      "saveEnabled",
+      "requestPermissions",
+      "schedule",
+      "cancel",
+      "describeTime"
+     ],
+     "methodLines": [
+      {
+       "name": "initialize",
+       "line": 34
+      },
+      {
+       "name": "isEnabled",
+       "line": 58
+      },
+      {
+       "name": "reminderHour",
+       "line": 63
+      },
+      {
+       "name": "reminderMinute",
+       "line": 68
+      },
+      {
+       "name": "saveTime",
+       "line": 73
+      },
+      {
+       "name": "saveEnabled",
+       "line": 79
+      },
+      {
+       "name": "requestPermissions",
+       "line": 87
+      },
+      {
+       "name": "schedule",
+       "line": 104
+      },
+      {
+       "name": "cancel",
+       "line": 170
+      },
+      {
+       "name": "describeTime",
+       "line": 183
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "package:timezone/data/latest_all.dart",
+    "package:timezone/timezone.dart"
+   ],
+   "usesPrefs": true,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/supabase_auth_test.dart",
+   "lines": 33,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "SupabaseAuthTest",
+     "file": "lib/services/supabase_auth_test.dart",
+     "startLine": 3,
+     "endLine": 32,
+     "lines": 30,
+     "widgetOf": null,
+     "methods": [
+      "loginOwner",
+      "logout"
+     ],
+     "methodLines": [
+      {
+       "name": "loginOwner",
+       "line": 6
+      },
+      {
+       "name": "logout",
+       "line": 29
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/services/supabase_connection_test.dart",
+   "lines": 19,
+   "kb": 0,
+   "classes": [
+    {
+     "name": "SupabaseConnectionTest",
+     "file": "lib/services/supabase_connection_test.dart",
+     "startLine": 3,
+     "endLine": 18,
+     "lines": 16,
+     "widgetOf": null,
+     "methods": [
+      "testConnection"
+     ],
+     "methodLines": [
+      {
+       "name": "testConnection",
+       "line": 6
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "profiles"
+     ],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [
+    "profiles"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/signup_page.dart",
+   "lines": 416,
+   "kb": 14,
+   "classes": [
+    {
+     "name": "SignUpPage",
+     "file": "lib/signup_page.dart",
+     "startLine": 7,
+     "endLine": 12,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "SignUpPage"
+     ],
+     "methodLines": [
+      {
+       "name": "SignUpPage",
+       "line": 8
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_SignUpPageState",
+     "file": "lib/signup_page.dart",
+     "startLine": 14,
+     "endLine": 415,
+     "lines": 402,
+     "widgetOf": "SignUpPage",
+     "methods": [
+      "dispose",
+      "_signUp",
+      "_showFriendlyMessage",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "dispose",
+       "line": 30
+      },
+      {
+       "name": "_signUp",
+       "line": 38
+      },
+      {
+       "name": "_showFriendlyMessage",
+       "line": 126
+      },
+      {
+       "name": "build",
+       "line": 221
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 1,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "widgets/bagi_character.dart",
+    "services/bagi_auth_service.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/supabase_debug_main.dart",
+   "lines": 22,
+   "kb": 0,
+   "classes": [],
+   "imports": [
+    "config/supabase_config.dart",
+    "supabase_debug_page.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/supabase_debug_page.dart",
+   "lines": 858,
+   "kb": 17,
+   "classes": [
+    {
+     "name": "SupabaseDebugPage",
+     "file": "lib/supabase_debug_page.dart",
+     "startLine": 4,
+     "endLine": 9,
+     "lines": 6,
+     "widgetOf": null,
+     "methods": [
+      "SupabaseDebugPage"
+     ],
+     "methodLines": [
+      {
+       "name": "SupabaseDebugPage",
+       "line": 5
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_SupabaseDebugPageState",
+     "file": "lib/supabase_debug_page.dart",
+     "startLine": 11,
+     "endLine": 857,
+     "lines": 847,
+     "widgetOf": "SupabaseDebugPage",
+     "methods": [
+      "testOwnerLogin",
+      "testOwnerDataAccess",
+      "testChildAccessGrants",
+      "testFamilyMembersAccess",
+      "testOwnProfileAccess",
+      "testOwnerIdentity",
+      "testChildPermissionResolution",
+      "logout",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "testOwnerLogin",
+       "line": 21
+      },
+      {
+       "name": "testOwnerDataAccess",
+       "line": 91
+      },
+      {
+       "name": "testChildAccessGrants",
+       "line": 172
+      },
+      {
+       "name": "testFamilyMembersAccess",
+       "line": 253
+      },
+      {
+       "name": "testOwnProfileAccess",
+       "line": 340
+      },
+      {
+       "name": "testOwnerIdentity",
+       "line": 456
+      },
+      {
+       "name": "testChildPermissionResolution",
+       "line": 599
+      },
+      {
+       "name": "logout",
+       "line": 740
+      },
+      {
+       "name": "build",
+       "line": 759
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [
+      "child_access_grants",
+      "children",
+      "family_members",
+      "profiles"
+     ],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [
+    "child_access_grants",
+    "children",
+    "family_members",
+    "profiles"
+   ],
+   "rpc": []
+  },
+  {
+   "path": "lib/supabase_service.dart",
+   "lines": 27,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "SupabaseService",
+     "file": "lib/supabase_service.dart",
+     "startLine": 3,
+     "endLine": 26,
+     "lines": 24,
+     "widgetOf": null,
+     "methods": [
+      "signIn",
+      "signOut"
+     ],
+     "methodLines": [
+      {
+       "name": "signIn",
+       "line": 16
+      },
+      {
+       "name": "signOut",
+       "line": 23
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/theme/bag2school_tokens.dart",
+   "lines": 36,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "Bag2SchoolColors",
+     "file": "lib/theme/bag2school_tokens.dart",
+     "startLine": 4,
+     "endLine": 18,
+     "lines": 15,
+     "widgetOf": null,
+     "methods": [],
+     "methodLines": [],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolSpacing",
+     "file": "lib/theme/bag2school_tokens.dart",
+     "startLine": 20,
+     "endLine": 27,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [],
+     "methodLines": [],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "Bag2SchoolRadii",
+     "file": "lib/theme/bag2school_tokens.dart",
+     "startLine": 29,
+     "endLine": 35,
+     "lines": 7,
+     "widgetOf": null,
+     "methods": [],
+     "methodLines": [],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/utils/controllers.dart",
+   "lines": 12,
+   "kb": 0,
+   "classes": [],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/utils/focus.dart",
+   "lines": 9,
+   "kb": 0,
+   "classes": [],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/Widget/child_avatar.dart",
+   "lines": 46,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "ChildAvatar",
+     "file": "lib/Widget/child_avatar.dart",
+     "startLine": 3,
+     "endLine": 45,
+     "lines": 43,
+     "widgetOf": null,
+     "methods": [
+      "ChildAvatar",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildAvatar",
+       "line": 8
+      },
+      {
+       "name": "build",
+       "line": 11
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/app_notification.dart",
+   "lines": 102,
+   "kb": 3,
+   "classes": [],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/bagi_character.dart",
+   "lines": 147,
+   "kb": 4,
+   "classes": [
+    {
+     "name": "BagiCharacter",
+     "file": "lib/widgets/bagi_character.dart",
+     "startLine": 15,
+     "endLine": 22,
+     "lines": 8,
+     "widgetOf": null,
+     "methods": [
+      "BagiCharacter"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiCharacter",
+       "line": 16
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_BagiCharacterState",
+     "file": "lib/widgets/bagi_character.dart",
+     "startLine": 24,
+     "endLine": 101,
+     "lines": 78,
+     "widgetOf": "BagiCharacter",
+     "methods": [
+      "initState",
+      "_loadSheet",
+      "dispose",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 34
+      },
+      {
+       "name": "_loadSheet",
+       "line": 39
+      },
+      {
+       "name": "dispose",
+       "line": 56
+      },
+      {
+       "name": "build",
+       "line": 63
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_BagiSpritePainter",
+     "file": "lib/widgets/bagi_character.dart",
+     "startLine": 103,
+     "endLine": 146,
+     "lines": 44,
+     "widgetOf": null,
+     "methods": [
+      "_BagiSpritePainter",
+      "paint",
+      "shouldRepaint"
+     ],
+     "methodLines": [
+      {
+       "name": "_BagiSpritePainter",
+       "line": 104
+      },
+      {
+       "name": "paint",
+       "line": 110
+      },
+      {
+       "name": "shouldRepaint",
+       "line": 144
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/bagi_tutorial_overlay.dart",
+   "lines": 465,
+   "kb": 15,
+   "classes": [
+    {
+     "name": "BagiTutorialTargetActions",
+     "file": "lib/widgets/bagi_tutorial_overlay.dart",
+     "startLine": 121,
+     "endLine": 140,
+     "lines": 20,
+     "widgetOf": null,
+     "methods": [
+      "register",
+      "activate",
+      "clear"
+     ],
+     "methodLines": [
+      {
+       "name": "register",
+       "line": 125
+      },
+      {
+       "name": "activate",
+       "line": 130
+      },
+      {
+       "name": "clear",
+       "line": 134
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_BagiTutorialSpotlight",
+     "file": "lib/widgets/bagi_tutorial_overlay.dart",
+     "startLine": 236,
+     "endLine": 433,
+     "lines": 198,
+     "widgetOf": null,
+     "methods": [
+      "_BagiTutorialSpotlight",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_BagiTutorialSpotlight",
+       "line": 250
+      },
+      {
+       "name": "build",
+       "line": 266
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "bagi_character.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/bubble_tail_painters.dart",
+   "lines": 79,
+   "kb": 2,
+   "classes": [
+    {
+     "name": "BagiBubbleTailPainter",
+     "file": "lib/widgets/bubble_tail_painters.dart",
+     "startLine": 6,
+     "endLine": 24,
+     "lines": 19,
+     "widgetOf": null,
+     "methods": [
+      "paint",
+      "shouldRepaint"
+     ],
+     "methodLines": [
+      {
+       "name": "paint",
+       "line": 8
+      },
+      {
+       "name": "shouldRepaint",
+       "line": 23
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiHomeBubbleTailPainter",
+     "file": "lib/widgets/bubble_tail_painters.dart",
+     "startLine": 26,
+     "endLine": 44,
+     "lines": 19,
+     "widgetOf": null,
+     "methods": [
+      "paint",
+      "shouldRepaint"
+     ],
+     "methodLines": [
+      {
+       "name": "paint",
+       "line": 28
+      },
+      {
+       "name": "shouldRepaint",
+       "line": 43
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "OrangeBubbleTailPainter",
+     "file": "lib/widgets/bubble_tail_painters.dart",
+     "startLine": 46,
+     "endLine": 60,
+     "lines": 15,
+     "widgetOf": null,
+     "methods": [
+      "paint",
+      "shouldRepaint"
+     ],
+     "methodLines": [
+      {
+       "name": "paint",
+       "line": 48
+      },
+      {
+       "name": "shouldRepaint",
+       "line": 59
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "PreparationBubbleTailPainter",
+     "file": "lib/widgets/bubble_tail_painters.dart",
+     "startLine": 62,
+     "endLine": 78,
+     "lines": 17,
+     "widgetOf": null,
+     "methods": [
+      "paint",
+      "shouldRepaint"
+     ],
+     "methodLines": [
+      {
+       "name": "paint",
+       "line": 64
+      },
+      {
+       "name": "shouldRepaint",
+       "line": 77
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/child_avatar.dart",
+   "lines": 46,
+   "kb": 1,
+   "classes": [
+    {
+     "name": "ChildAvatar",
+     "file": "lib/widgets/child_avatar.dart",
+     "startLine": 3,
+     "endLine": 45,
+     "lines": 43,
+     "widgetOf": null,
+     "methods": [
+      "ChildAvatar",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "ChildAvatar",
+       "line": 8
+      },
+      {
+       "name": "build",
+       "line": 11
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/list_items.dart",
+   "lines": 228,
+   "kb": 6,
+   "classes": [
+    {
+     "name": "ActionIconButton",
+     "file": "lib/widgets/list_items.dart",
+     "startLine": 6,
+     "endLine": 40,
+     "lines": 35,
+     "widgetOf": null,
+     "methods": [
+      "ActionIconButton",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "ActionIconButton",
+       "line": 12
+      },
+      {
+       "name": "build",
+       "line": 20
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "ScheduleItem",
+     "file": "lib/widgets/list_items.dart",
+     "startLine": 42,
+     "endLine": 95,
+     "lines": 54,
+     "widgetOf": null,
+     "methods": [
+      "ScheduleItem",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "ScheduleItem",
+       "line": 49
+      },
+      {
+       "name": "build",
+       "line": 59
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "TodoItem",
+     "file": "lib/widgets/list_items.dart",
+     "startLine": 97,
+     "endLine": 168,
+     "lines": 72,
+     "widgetOf": null,
+     "methods": [
+      "TodoItem",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "TodoItem",
+       "line": 102
+      },
+      {
+       "name": "build",
+       "line": 110
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "BagiTip",
+     "file": "lib/widgets/list_items.dart",
+     "startLine": 170,
+     "endLine": 227,
+     "lines": 58,
+     "widgetOf": null,
+     "methods": [
+      "BagiTip",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "BagiTip",
+       "line": 171
+      },
+      {
+       "name": "build",
+       "line": 174
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  },
+  {
+   "path": "lib/widgets/month_calendar.dart",
+   "lines": 368,
+   "kb": 12,
+   "classes": [
+    {
+     "name": "Bag2SchoolMonthCalendar",
+     "file": "lib/widgets/month_calendar.dart",
+     "startLine": 9,
+     "endLine": 17,
+     "lines": 9,
+     "widgetOf": null,
+     "methods": [
+      "Bag2SchoolMonthCalendar"
+     ],
+     "methodLines": [
+      {
+       "name": "Bag2SchoolMonthCalendar",
+       "line": 12
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_Bag2SchoolMonthCalendarState",
+     "file": "lib/widgets/month_calendar.dart",
+     "startLine": 19,
+     "endLine": 321,
+     "lines": 303,
+     "widgetOf": "Bag2SchoolMonthCalendar",
+     "methods": [
+      "initState",
+      "monthName",
+      "daysInMonth",
+      "indicatorsFor",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "initState",
+       "line": 23
+      },
+      {
+       "name": "monthName",
+       "line": 32
+      },
+      {
+       "name": "daysInMonth",
+       "line": 51
+      },
+      {
+       "name": "indicatorsFor",
+       "line": 55
+      },
+      {
+       "name": "build",
+       "line": 130
+      }
+     ],
+     "storeRefs": 3,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_CalendarWeekday",
+     "file": "lib/widgets/month_calendar.dart",
+     "startLine": 323,
+     "endLine": 341,
+     "lines": 19,
+     "widgetOf": null,
+     "methods": [
+      "_CalendarWeekday",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_CalendarWeekday",
+       "line": 326
+      },
+      {
+       "name": "build",
+       "line": 329
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    },
+    {
+     "name": "_CalendarLegend",
+     "file": "lib/widgets/month_calendar.dart",
+     "startLine": 343,
+     "endLine": 367,
+     "lines": 25,
+     "widgetOf": null,
+     "methods": [
+      "_CalendarLegend",
+      "build"
+     ],
+     "methodLines": [
+      {
+       "name": "_CalendarLegend",
+       "line": 347
+      },
+      {
+       "name": "build",
+       "line": 350
+      }
+     ],
+     "storeRefs": 0,
+     "dialogs": 0,
+     "permissions": 0,
+     "navigations": [],
+     "supabaseTables": [],
+     "supabaseRpc": []
+    }
+   ],
+   "imports": [
+    "../data/store.dart",
+    "../models/activity_models.dart"
+   ],
+   "usesPrefs": false,
+   "tables": [],
+   "rpc": []
+  }
+ ],
+ "edges": [
+  {
+   "from": "lib/auth_gate.dart",
+   "to": "lib/choose_family_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/auth_gate.dart",
+   "to": "lib/login_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/auth_gate.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/auth_gate.dart",
+   "to": "lib/family_waiting_room_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/auth_gate.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_AuthGateState",
+   "to": "AuthGate",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_AuthGateState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 8
+  },
+  {
+   "from": "lib/bagi_identity_settings_page.dart",
+   "to": "lib/services/bagi_identity_controller.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_BagiIdentitySettingsPageState",
+   "to": "BagiIdentitySettingsPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "ChildPermissionService",
+   "to": "table:child_access_grants",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "lib/choose_family_page.dart",
+   "to": "lib/family_waiting_room_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/choose_family_page.dart",
+   "to": "lib/create_family_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/choose_family_page.dart",
+   "to": "lib/login_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/create_family_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/create_family_page.dart",
+   "to": "lib/login_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/create_family_page.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/create_family_page.dart",
+   "to": "lib/services/bagi_profile_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/create_family_page.dart",
+   "to": "lib/services/owner_tutorial_state.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_CreateFamilyPageState",
+   "to": "CreateFamilyPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_CreateFamilyPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 3
+  },
+  {
+   "from": "lib/data/serializers.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/services/bagi_local_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/services/family_access_defaults.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/data/store.dart",
+   "to": "lib/widgets/app_notification.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "LocalAuthorization",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 15
+  },
+  {
+   "from": "Bag2SchoolStore",
+   "to": "table:children",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "lib/family_waiting_room_page.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/family_waiting_room_page.dart",
+   "to": "lib/login_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_FamilyWaitingRoomPageState",
+   "to": "FamilyWaitingRoomPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_activity_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_activity_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_activity_page.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_FamilyActivityPageState",
+   "to": "FamilyActivityPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_FamilyActivityPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 5
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/services/family_access_defaults.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/create_family_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/widgets/app_notification.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/family/family_settings_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_FamilySettingsPageState",
+   "to": "FamilySettingsPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_FamilySettingsPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 55
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/services/bagi_greeting_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/services/owner_tutorial_state.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/theme/bag2school_tokens.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/utils/controllers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/widgets/app_notification.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/widgets/bubble_tail_painters.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/widgets/child_avatar.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/features/family/family_activity_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/features/homework/homework_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/features/preparation/preparation_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/features/schedule/schedule_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/home/home_page.dart",
+   "to": "lib/features/settings/settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "HomePage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "FamilyActivityPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "HomeworkPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "PreparationPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "SchedulePage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "SettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomePageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 64
+  },
+  {
+   "from": "lib/features/homework/homework_history_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "HomeworkHistoryPage",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/utils/controllers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/widgets/bubble_tail_painters.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/features/preparation/preparation_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/features/schedule/schedule_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/homework/homework_page.dart",
+   "to": "lib/features/settings/settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "HomeworkPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "HomeworkHistoryPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "PreparationPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "SchedulePage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "SettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_HomeworkPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 41
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/services/bagi_greeting_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/services/preparation_defaults.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/utils/controllers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/widgets/bubble_tail_painters.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/features/homework/homework_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/features/schedule/schedule_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/preparation/preparation_page.dart",
+   "to": "lib/features/settings/settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_PreparationPageState",
+   "to": "PreparationPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_PreparationPageState",
+   "to": "HomeworkPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_PreparationPageState",
+   "to": "SchedulePage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_PreparationPageState",
+   "to": "SettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_PreparationPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 70
+  },
+  {
+   "from": "PreparationOfferCardState",
+   "to": "PreparationOfferCard",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_PreparationChecklistItemState",
+   "to": "PreparationChecklistItem",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/event_activity_form.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/event_activity_form.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_EventActivityFormState",
+   "to": "EventActivityForm",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/exam_activity_form.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/exam_activity_form.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_ExamActivityFormState",
+   "to": "ExamActivityForm",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/extracurricular_activity_form.dart",
+   "to": "lib/features/schedule/widgets/conflict_card.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_ExtracurricularActivityFormState",
+   "to": "ExtracurricularActivityForm",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_ExtracurricularActivityFormState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/lesson_activity_form.dart",
+   "to": "lib/features/schedule/widgets/conflict_card.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_LessonActivityFormState",
+   "to": "LessonActivityForm",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_LessonActivityFormState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/school_activity_form.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/school_activity_form.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/school_activity_form.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/forms/school_activity_form.dart",
+   "to": "lib/features/schedule/widgets/conflict_card.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_SchoolActivityFormState",
+   "to": "SchoolActivityForm",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_SchoolActivityFormState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/theme/bag2school_tokens.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/utils/focus.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/widgets/bubble_tail_painters.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/widgets/list_items.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/widgets/month_calendar.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/features/homework/homework_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/features/preparation/preparation_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/schedule_page.dart",
+   "to": "lib/features/settings/settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_SchedulePageState",
+   "to": "SchedulePage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_SchedulePageState",
+   "to": "HomeworkPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SchedulePageState",
+   "to": "PreparationPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SchedulePageState",
+   "to": "SettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SchedulePageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 66
+  },
+  {
+   "from": "_ScheduleTimelineItemState",
+   "to": "ScheduleTimelineItem",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/widgets/conflict_card.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/widgets/conflict_card.dart",
+   "to": "lib/services/bagi_message.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/schedule/widgets/conflict_card.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/widgets/app_notification.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/bagi_identity_settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/login_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/services/bagi_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/services/bagi_family_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/local_account_page.dart",
+   "to": "lib/utils/controllers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_LocalAccountPageState",
+   "to": "LocalAccountPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_LocalAccountPageState",
+   "to": "BagiIdentitySettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_LocalAccountPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 17
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/bagi_identity_settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/services/owner_tutorial_state.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/services/reminder_content.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/services/reminder_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/utils/controllers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/widgets/app_notification.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/widgets/bagi_tutorial_overlay.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/widgets/child_avatar.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/features/family/family_activity_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/features/settings/settings_page.dart",
+   "to": "lib/features/family/family_settings_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "SettingsPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "BagiIdentitySettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "FamilyActivityPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "FamilySettingsPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "LocalAccountPage",
+   "kind": "navigate",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "table:children",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "_SettingsPageState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 32
+  },
+  {
+   "from": "_DailyReminderTileState",
+   "to": "_DailyReminderTile",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/services/bagi_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/signup_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/auth_gate.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/features/home/home_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/theme/bag2school_tokens.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/login_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_LoginPageState",
+   "to": "LoginPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/config/supabase_config.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/services/bagi_app_bootstrap.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/services/bagi_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/services/reminder_content.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/services/reminder_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/theme/bag2school_tokens.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/features/home/home_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/reset_password_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/main.dart",
+   "to": "lib/auth_gate.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/reset_password_page.dart",
+   "to": "lib/services/bagi_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_ResetPasswordPageState",
+   "to": "ResetPasswordPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:children",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:families",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:family_invitation_codes",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:family_invitations",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:family_join_requests",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "table:family_members",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:consume_family_invitation_link",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:create_family",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:create_family_invitation_link",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:delete_own_account",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:find_profile_by_email",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:join_family_with_invitation_code",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:leave_family_with_transfer",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "BagiFamilyService",
+   "to": "rpc:validate_family_invitation_code",
+   "kind": "calls_rpc",
+   "count": 1
+  },
+  {
+   "from": "lib/services/bagi_message.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/services/bagi_message.dart",
+   "to": "lib/models/family_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "BagiProfileService",
+   "to": "table:profiles",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "lib/services/reminder_content.dart",
+   "to": "lib/data/serializers.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/services/reminder_content.dart",
+   "to": "lib/models/child_profile.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/services/reminder_content.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "SupabaseConnectionTest",
+   "to": "table:profiles",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "lib/signup_page.dart",
+   "to": "lib/widgets/bagi_character.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/signup_page.dart",
+   "to": "lib/services/bagi_auth_service.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_SignUpPageState",
+   "to": "SignUpPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/supabase_debug_main.dart",
+   "to": "lib/config/supabase_config.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/supabase_debug_main.dart",
+   "to": "lib/supabase_debug_page.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_SupabaseDebugPageState",
+   "to": "SupabaseDebugPage",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_SupabaseDebugPageState",
+   "to": "table:child_access_grants",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "_SupabaseDebugPageState",
+   "to": "table:children",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "_SupabaseDebugPageState",
+   "to": "table:family_members",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "_SupabaseDebugPageState",
+   "to": "table:profiles",
+   "kind": "reads_table",
+   "count": 1
+  },
+  {
+   "from": "_BagiCharacterState",
+   "to": "BagiCharacter",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "lib/widgets/month_calendar.dart",
+   "to": "lib/data/store.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "lib/widgets/month_calendar.dart",
+   "to": "lib/models/activity_models.dart",
+   "kind": "import",
+   "count": 1
+  },
+  {
+   "from": "_Bag2SchoolMonthCalendarState",
+   "to": "Bag2SchoolMonthCalendar",
+   "kind": "state_of",
+   "count": 1
+  },
+  {
+   "from": "_Bag2SchoolMonthCalendarState",
+   "to": "Bag2SchoolStore",
+   "kind": "uses_state",
+   "count": 3
+  }
+ ]
+}
