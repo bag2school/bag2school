@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bag2school.app",
+      "sha256_cert_fingerprints": [
+        "af496243e0631044231325c2aacbac7920442de486af2a5e550dbe37bb59677e"
+      ]
+    }
+  }
+]

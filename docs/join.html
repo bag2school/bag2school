@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bag2School — Join a family</title>
+<title>RANSERU — Join a family</title>
 <style>
   :root { --orange:#FF7A21; --ink:#302722; --muted:#756B65; --paper:#FFFCF8; }
   * { box-sizing: border-box; }
@@ -27,14 +27,14 @@
 </head>
 <body>
 <main>
-  <span class="badge">Bag2School</span>
+  <span class="badge">RANSERU</span>
   <h1>Join your family</h1>
-  <p id="lead">Opening Bag2School…</p>
+  <p id="lead">Opening RANSERU…</p>
 
-  <a id="open" class="btn hidden" href="#">Open Bag2School</a>
+  <a id="open" class="btn hidden" href="#">Open RANSERU</a>
 
   <div id="missing" class="card hidden">
-    <p><strong>Bag2School is not installed yet.</strong></p>
+    <p><strong>RANSERU is not installed yet.</strong></p>
     <p class="small">
       Install the app from Google Play first, then open this link again.
     </p>
@@ -67,7 +67,7 @@
     const open = document.getElementById('open');
     open.href = deepLink;
     open.classList.remove('hidden');
-    open.textContent = 'Open Bag2School';
+    open.textContent = 'Open RANSERU';
 
     // Try to hand the token straight to the app.
     window.location.href = deepLink;
